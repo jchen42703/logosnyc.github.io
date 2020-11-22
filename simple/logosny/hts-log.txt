@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 21 Nov 2020 17:48:49 at http://em.logosny.org/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://em.logosny.org/ -O1 "C:\My Web Sites\logosny" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:48:50	Warning: 	File not parsed, looks like binary: em.logosny.org/robots.txt
+17:49:35	Error: 	"Method Not Allowed" (405) at link em.logosny.org/xmlrpc.php (from em.logosny.org/)
+17:54:47	Warning: 	Retry after error -4 (Incorrect length (308114 Bytes, 546026 expected)) at link em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png (from em.logosny.org/)
+17:54:47	Warning: 	File not parsed, looks like binary: em.logosny.org/wp-content/plugins/revslider/public/assets/css/openhand.cur
+17:54:47	Warning: 	File not parsed, looks like binary: em.logosny.org/wp-content/plugins/revslider/public/assets/css/closedhand.cur
+17:54:51	Warning: 	Retry after error -4 (Incorrect length (368104 Bytes, 840231 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Who-We-Are-Banner.png (from em.logosny.org/about/who-we-are)
+17:54:53	Warning: 	Retry after error -4 (Incorrect length (564529 Bytes, 708451 expected)) at link em.logosny.org/wp-content/uploads/2016/09/Website-Banners.png (from em.logosny.org/about/vision-and-mission)
+17:55:26	Warning: 	Retry after error -4 (Incorrect length (507919 Bytes, 664541 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Website-Banners-8.png (from em.logosny.org/im-new/welcome)
+17:55:28	Warning: 	Retry after error -4 (Incorrect length (235174 Bytes, 422585 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Website-Banners-2-1.png (from em.logosny.org/im-new/times-and-location)
+17:55:31	Warning: 	Retry after error -4 (Incorrect length (434664 Bytes, 594890 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Website-Banners.png (from em.logosny.org/im-new/children-and-youth)
+17:55:45	Warning: 	Retry after error -4 (Incorrect length (437811 Bytes, 532761 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Website-Banners-6.png (from em.logosny.org/im-new/find-a-fellowship)
+17:55:54	Warning: 	Retry after error -4 (Incorrect length (296813 Bytes, 597901 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Website-Banners-5.png (from em.logosny.org/connect/fellowships)
+17:55:57	Warning: 	Retry after error -4 (Incorrect length (264219 Bytes, 447656 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Website-Banners-7.png (from em.logosny.org/connect/basketball)
+17:55:59	Warning: 	Retry after error -4 (Incorrect length (526049 Bytes, 656568 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Website-Banners-4-1.png (from em.logosny.org/connect/calendar)
+17:56:03	Warning: 	Retry after error -4 (Incorrect length (300817 Bytes, 419783 expected)) at link em.logosny.org/wp-content/uploads/2016/10/Website-Banners-9.png (from em.logosny.org/ministries)

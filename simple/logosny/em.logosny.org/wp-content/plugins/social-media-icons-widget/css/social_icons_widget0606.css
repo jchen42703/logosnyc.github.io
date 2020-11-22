@@ -1,0 +1,5 @@
+.social-icons-widget ul { list-style-type:none; margin:0 0 15px; width:100%; }
+.social-icons-widget ul li { display:inline-block; margin:0 6px 10px 0; }
+.social-icons-widget ul.show-labels li { display:block; }
+.social-icons-widget ul li a { margin:0; }
+.social-icons-widget ul.show-labels li img { margin-right:10px; vertical-align:middle; }
