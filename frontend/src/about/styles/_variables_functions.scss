@@ -1,0 +1,16 @@
+// makes everything centered
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+// control the font's family,size and color
+@mixin fontAndColor($textColor, $fontFamily,$fontSize) {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    color: $textColor;
+ 
+}

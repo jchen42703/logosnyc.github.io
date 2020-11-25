@@ -1,0 +1,89 @@
+@import 'variables_functions';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+
+header{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../images/about_background.jpg");
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    h1,h2,h3{
+        @include flexCenter();
+        @include fontAndColor(white,Montserrat,75px);
+        
+          
+    }
+}
+
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
+
+.who-we-are{
+    text-align: center;
+    margin-top: 0;
+    background-color: black;
+
+    h4{
+        @include flexCenter();
+        @include fontAndColor(white,Montserrat,75px);
+    }
+    p{
+        @include flexCenter();
+        @include fontAndColor(white,Montserrat,20px);
+        margin-left: 25%;
+        width: 50%;
+    }
+}
+
+.vision-and-mission{
+    text-align: center;
+    background-color: white;
+    h5{
+        @include flexCenter();
+        @include fontAndColor(black,Montserrat,75px);
+        margin-top:0;
+    }
+    p{
+        @include flexCenter();
+        @include fontAndColor(black,Montserrat,20px);
+        margin-left: 25%;
+        width: 50%;
+    }
+}
+
+.our-staff{
+    text-align: center;
+    h6{
+        @include flexCenter();
+        @include fontAndColor(white,Montserrat,75px);
+    }
+    p{
+        @include flexCenter();
+        @include fontAndColor(white,Montserrat,20px);
+        margin-left: 25%;
+        width: 50%;
+    }
+    span{
+        @include flexCenter();
+        @include fontAndColor(white,Montserrat,25px);
+    }
+}
+
+.footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #18181a;
+
+}
+
