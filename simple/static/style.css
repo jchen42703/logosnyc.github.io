@@ -48,34 +48,68 @@
 }
 
 .hero-text span {
-  font-size: 70px;
-  font-style: italic;
-  border-bottom: solid 3px #019fb6;
+  font-size: 55px;
+  /* font-style: italic; */
+  /* border-bottom: solid 3px #019fb6; */
   font-weight: 700;
   margin-bottom: 10vh;
   /* letter-spacing: 0.2em; */
   transition: color 0.3s ease-out;
 }
 
-.hero-text .lcc {
-  /* font-style: italic; */
+.hero-text hr {
+  margin-bottom: 2vh;
+  border: 2px solid white;
 }
-
-/* .hero-text span:before {
-  display: block;
-  content: "";
-  border-bottom: solid 3px #019fb6;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-}
-
-.hero-text span:after {
-  transform: scaleX(1);
-} */
 
 .hero-text p {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
+}
+
+.two-button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10%;
+  padding: 0 15%;
+}
+
+a.button1 {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer !important;
+
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+a.button1:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.announcements-container {
+  /** Carousel of cards */
+}
+
+.programs {
+  /** Grid of image links */
+}
+
+.faq {
+  /** Standard */
+  margin: 5vh 15vw;
 }
 
 .contact-container {
@@ -84,7 +118,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10%;
-  padding: 0 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  padding: 5% 15%;
+  /* position: absolute;
+  bottom: 0; */
 }
