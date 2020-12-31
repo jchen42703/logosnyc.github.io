@@ -1,89 +1,85 @@
-@import 'variables_functions';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
-header{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../images/about_background.jpg");
-    color: white;
-    height: 100vh;
-    width: 100vw;
-    h1,h2,h3{
-        @include flexCenter();
-        @include fontAndColor(white,Montserrat,75px);
-        
-          
-    }
-}
-
-body {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    background-color: black;
-    overflow-y: scroll;
-    overflow-x: hidden;
-
-  }
-
-.who-we-are{
-    text-align: center;
-    margin-top: 0;
-    background-color: black;
-
-    h4{
-        @include flexCenter();
-        @include fontAndColor(white,Montserrat,75px);
-    }
-    p{
-        @include flexCenter();
-        @include fontAndColor(white,Montserrat,20px);
-        margin-left: 25%;
-        width: 50%;
-    }
-}
-
-.vision-and-mission{
-    text-align: center;
-    background-color: white;
-    h5{
-        @include flexCenter();
-        @include fontAndColor(black,Montserrat,75px);
-        margin-top:0;
-    }
-    p{
-        @include flexCenter();
-        @include fontAndColor(black,Montserrat,20px);
-        margin-left: 25%;
-        width: 50%;
-    }
-}
-
-.our-staff{
-    text-align: center;
-    h6{
-        @include flexCenter();
-        @include fontAndColor(white,Montserrat,75px);
-    }
-    p{
-        @include flexCenter();
-        @include fontAndColor(white,Montserrat,20px);
-        margin-left: 25%;
-        width: 50%;
-    }
-    span{
-        @include flexCenter();
-        @include fontAndColor(white,Montserrat,25px);
-    }
-}
-
-.footer{
-    width: 100vw;
-    display: block;
-    overflow: hidden;
-    padding: 70px 0;
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    background-color: #18181a;
+}
 
+html{
+    font-size: 10px;
+}
+
+body{
+    background-repeat: no-repeat;
+    font-family: "Montserrat";
+
+}
+
+.our-staff-1{
+    background: #a0d6b4;
+    margin:0 auto;
+    text-align: center;
+
+}
+
+.our-staff-2{
+    background: white;
+    margin:0 auto;
+    text-align: center;
+
+}
+
+h1{
+    color:black;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h2{
+    color:#777;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.image{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+p{
+    font-size: 1.5rem;
+    color:black;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 2.75rem 7.5rem;
+    background: #f6f6f6;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: black;
+    border-radius: 10px;
+    transition: background 0.5s;
+    margin-bottom: 5rem;
+}
+
+
+.btn-2{
+    display: inline-block;
+    padding: 2.75rem 7.5rem;
+    background: black;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: white;
+    border-radius: 10px;
+    transition: background 0.5s;
+    margin-bottom: 5rem;
 }
 
