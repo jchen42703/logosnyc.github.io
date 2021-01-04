@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  font-family: "Montserrat";
+}
+
+.hero {
+  height: 100vh;
+}
+
+html {
+  font-size: 10px;
+}
+
+#hero-heading {
+  font-size: 7rem;
+  font-family: "Shadows into Light", sans-serif;
+}
+
+.btn-hero {
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  padding: 10px;
+  color: black;
+  border: 4px solid black;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.btn-hero:hover, .btn-hero:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.img-container {
+  background-image: url("../images/our-mission-hero.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.inner-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 300px;
+}
+
+@media only screen and (max-width: 920px) {
+  .inner-container {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .inner-container {
+    margin-top: 150px;
+  }
+  #hero-heading {
+    font-size: 5em;
+  }
+  #img-heading {
+    font-size: 1.4em;
+  }
+}
+
+.mission {
+  text-align: center;
+}
+
+.mission h1 {
+  margin-top: 160px;
+  font-size: 36px;
+  color: #898989;
+  margin-bottom: 5rem;
+}
+
+.mission p {
+  font-size: 18px;
+  color: black;
+}
+
+.vision {
+  margin-top: 20rem;
+  text-align: center;
+  height: 50vh;
+}
+
+.vision h1 {
+  font-size: 36px;
+  color: #898989;
+  margin-bottom: 5rem;
+}
+
+.vision p {
+  font-size: 18px;
+  color: black;
+}
+/*# sourceMappingURL=vision-mission.css.map */
