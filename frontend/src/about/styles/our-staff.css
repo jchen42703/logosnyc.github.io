@@ -126,7 +126,7 @@ p {
 
 .img-container {
   background-image: url("../images/hero-image.jpg");
-  height: 80vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
