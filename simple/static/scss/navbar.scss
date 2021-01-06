@@ -1,4 +1,5 @@
 /* BASIC SETUP */
+@import "./_colors";
 
 .page-wrapper {
   width: 100%;
@@ -10,64 +11,77 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background-color: #fff;
-}
 
-/* NAVIGATION */
+  .transparent {
+    background-color: transparent;
+    .nav-item a {
+      color: $white;
+    }
+  }
+  .vanilla {
+    background-color: $white;
+    .nav-item a {
+      color: $dark-grey;
+    }
+  }
 
-.navbar {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  height: 10vh;
-  min-height: 96px;
-  overflow: hidden;
-}
+  /* NAVIGATION */
 
-.navbar img {
-  height: 65%;
-  width: auto;
-  justify-self: start;
-  margin-left: 7vw;
-}
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    height: 10vh;
+    min-height: 96px;
+    overflow: hidden;
 
-.navbar ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  min-width: 50vw;
-  grid-gap: 1.5vw;
-  justify-self: end;
-  margin-right: 5vw;
-}
+    // logo
+    img {
+      height: 65%;
+      width: auto;
+      justify-self: start;
+      margin-left: 7vw;
+    }
 
-.nav-item {
-  display: flex;
-  justify-content: center;
-}
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      min-width: 50vw;
+      grid-gap: 1.5vw;
+      justify-self: end;
+      margin-right: 5vw;
+    }
+  }
 
-.nav-item a {
-  color: #3f4042;
-  font-size: 16px;
-  font-weight: 700;
-  text-decoration: none;
-  /* letter-spacing: 0.1em; */
-  text-transform: uppercase;
-  transition: color 0.3s ease-out;
-  opacity: 95%;
-  /* position: relative; */
-}
+  .nav-item {
+    display: flex;
+    justify-content: center;
 
-/** Underline Animation */
-.nav-item a:after {
-  display: block;
-  content: "";
-  border-bottom: solid 3px #019fb6;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-}
-.nav-item a:hover:after {
-  transform: scaleX(1);
+    a {
+      // color: $white;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      /* letter-spacing: 0.1em; */
+      text-transform: uppercase;
+      transition: color 0.3s ease-out;
+      opacity: 95%;
+      /* position: relative; */
+      /** Underline Animation */
+      &:after {
+        display: block;
+        content: "";
+        border-bottom: solid 3px $green;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+      }
+
+      &:hover:after {
+        transform: scaleX(1);
+      }
+    }
+  }
 }
 
 /* MOBILE MENU & ANIMATION */
@@ -75,7 +89,7 @@
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
-  background-color: #3f3f3f;
+  background-color: $dark-grey;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -121,7 +135,7 @@
     position: fixed;
     justify-content: start;
     top: 55px;
-    background-color: #fff;
+    background-color: $white;
     width: 100%;
     height: calc(100vh - 55px);
     transform: translate(-101%);

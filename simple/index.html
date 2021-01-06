@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="static/navbar/navbar.css" />
-    <link rel="stylesheet" href="static/navbar/colorTemplate.css" />
+    <link rel="stylesheet" href="static/css/home.css" />
+    <link rel="stylesheet" href="static/css/navbar.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -16,40 +15,71 @@
   </head>
 
   <body>
-    <div class="page-wrapper">
-      <div class="nav-wrapper">
-        <nav class="navbar">
-          <img
-            src="http://em.logosny.org/wp-content/uploads/2016/11/LCC-EM-Website-Logo-e1478292276929.png"
-            alt="Company Logo"
-          />
-          <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <div class="hero-bg">
+      <div class="page-wrapper">
+        <div class="nav-wrapper">
+          <nav class="navbar transparent">
+            <img src="./media/logo_w_long_fixed.svg" alt="Logo" />
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul>
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">About</a></li>
+              <li class="nav-item"><a href="#">Connect</a></li>
+              <li class="nav-item"><a href="#">Sermons</a></li>
+              <li class="nav-item"><a href="#">Giving</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <script src="static/navbar.js"></script>
+
+      <div class="hero-image-welcome">
+        <div class="hero-text">
+          <div class="hero-header">
+            <span>IN UNITY WE SERVE</span>
+            <hr />
+            <a href="#" class="button1" style="margin-top: 5%"
+              >WATCH THE LATEST MESSAGE</a
+            >
           </div>
-          <ul class="nav">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Connect</a></li>
-            <li class="nav-item"><a href="#">Sermons</a></li>
-            <li class="nav-item"><a href="#">Giving</a></li>
-          </ul>
-        </nav>
+        </div>
       </div>
     </div>
 
-    <script src="navbar.js"></script>
+    <div class="two-columns">
+      <div class="service" style="margin-left: 5vw">
+        <img
+          src="https://www.logosny.org/ch/images/phocagallery/test/thumbs/phoca_thumb_l_10537185_568276713301322_1103929964641965087_o.jpg"
+          alt=""
+        />
+        <div class="wrapper">
+          <h3 class="header">ONLINE SERVICE</h3>
+          <div class="content">
+            <span>English</span>
+            <p>Sunday @11:45 A.M.</p>
+            <a href="#" class="button1" style="margin-top: 5%">WATCH LIVE</a>
+          </div>
+        </div>
+      </div>
 
-    <div class="hero-image-welcome">
-      <div class="hero-text">
-        <div class="hero-header">
-          <span>Come & Join Us!</span>
-          <hr />
-          <p>Service every Sunday at 11:45 A.M.</p>
-          <div class="two-button-grid" style="margin-top: 5%">
-            <a href="#" class="button1" style="margin-top: 5%">Online</a>
-            <a href="" class="button1" style="margin-top: 5%">In Person</a>
+      <div class="service">
+        <img
+          src="https://www.logosny.org/ch/images/phocagallery/test/thumbs/phoca_thumb_l_10537185_568276713301322_1103929964641965087_o.jpg"
+          alt=""
+        />
+        <div class="wrapper">
+          <h3 class="header">IN-PERSON SERVICE</h3>
+          <div class="content">
+            <p>Every Sunday @11:45 A.M.</p>
+            <br />
+            <a href="#" class="button1" style="margin-top: 5%"
+              >REGISTER FOR SERVICE</a
+            >
           </div>
         </div>
       </div>
@@ -57,116 +87,6 @@
 
     <div class=".announcements-container"></div>
 
-    <div class="faq gray">
-      <h1 style="text-align: center">FAQ</h1>
-      <h3>What can I expect when I arrive on Sunday?</h3>
-      <p>
-        Join us for worship service at 11:15 AM at our new 171 Building,
-        followed by lunch. Feel free to come a little earlier and meet with one
-        of our welcome team members!
-      </p>
-      <h3>What’s for lunch?</h3>
-      <p>
-        Lunch is a time for everyone at Logos to fellowship over food. Our lunch
-        team orders in local Chinese takeout. First-time visitors eat free!
-      </p>
-      <h3>Is there childcare?</h3>
-      <p>
-        Our amazing volunteers serve every Sunday to help run our children’s
-        ministry. We have programs for children from kindergarten to middle
-        school starting at 11:30 AM. Drop off is at 11:15 AM and pick up is at
-        1:00 PM. For more information on this ministry, check out our page on
-        children and youth. Parents with toddlers and pre-k children can bring
-        them to the designated area in the back of the Sanctuary on the first
-        floor. Parents with infants may bring them to our service where there is
-        space in the last few rows for parents who may need to step out briefly
-        to tend to their children.
-      </p>
-      <h3>Do I have to stand when you welcome newcomers?</h3>
-      <p>
-        Definitely not! We do not want to have you do something which you’re not
-        comfortable with. Standing allows our welcome team and the rest of the
-        congregation to acknowledge and welcome you in case they missed you on
-        the way in. If you prefer not to stand, please don’t hesitate to
-        introduce yourselves to our pastoral staff, our welcome team, or those
-        around you.
-      </p>
-      <h3>What is your preaching and worship style?</h3>
-      <p>
-        Our services consists of contemporary worship followed by a message from
-        God’s Word.
-      </p>
-      <!-- Not finished -->
-      <h3>How long are your services? What happens during service?</h3>
-      <p>
-        Our services are approximately 75 minutes long, and consists of four
-        parts:
-      </p>
-      <h4>Worship</h4>
-      <p>
-        God has called us not just to know Him, but to worship Him. The worship
-        part of our service is a time where we sing songs that are chosen to
-        give praise to Him, and to express our love for Him and His love for us.
-        We do our best to select songs that are God-centered, theologically
-        sound, and musically accessible.
-      </p>
-
-      <h3>What should I wear to service?</h3>
-      <p>
-        Our services are quite casual. Some wear a t-shirt and jeans, while
-        others wear a suit and tie. Whether you are wearing one or the other, we
-        warmly welcome you to worship with us.
-      </p>
-
-      <h3>How often do you celebrate communion?</h3>
-      <p>We celebrate communion on the first Sunday of every month.</p>
-      <p>
-        Communion is a time in which we, as followers of Jesus Christ, give
-        thanks in remembrance of Jesus’ sacrifice on the cross for our sins.
-        Communion is reserved for those who have professed their faith in Jesus
-        Christ publicly through baptism.
-      </p>
-      <p>
-        If you have not been baptized or have placed your faith in Jesus Christ,
-        don’t hesitate to reach out to one of our pastoral staff or deacons, who
-        can talk to you more about it.
-      </p>
-
-      <h3>How do I get baptized? Or become a member?</h3>
-      <p>
-        If you would like to be a candidate for baptism or membership, please
-        come speak to one of our pastoral staff or deacons. The baptismal
-        process includes an 8 week course, preparing a testimony, and a brief
-        interview. For those who have been baptized and are interested in
-        membership, the last 2 classes of the baptismal course are set aside for
-        membership. The course is offered twice a year, once in the Fall and
-        once in the Spring.
-      </p>
-
-      <h3>Is your church wheelchair accessible?</h3>
-      <p>
-        Yes, it is! Our main entrance has a ramp for wheelchair use and there is
-        an elevator located near the stairwell on the first floor that can take
-        you to the basement or the second floor.
-      </p>
-
-      <h3>How do I get to church?</h3>
-      <p>
-        Our church is located at 43-00 171st Street, Flushing, NY 11358. We are
-        located right off of Northern Blvd near Utopia Parkway. We are easily
-        accessible from the I-295 Clearview Expressway and I-495 Long Island
-        Expressway (LIE).
-      </p>
-
-      <h3>Where do I park?</h3>
-      <p>Street parking is available on the numbered streets and avenues.</p>
-      <h3>I’m completely lost. Where do I go?</h3>
-      <p>
-        No worries! Arriving at a new place with new people can be quite
-        intimidating. Feel free to ask one of our welcome team members (they’re
-        the ones wearing a name tag).
-      </p>
-    </div>
     <footer>
       <div class="contact-container">
         <div>
@@ -178,7 +98,6 @@
             Jesus Christ to the community.
           </p>
         </div>
-
         <div>
           <h3>OUR LOCATION</h3>
         </div>
