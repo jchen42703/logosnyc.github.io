@@ -25,11 +25,13 @@
     height: 10vh;
     min-height: 96px;
     overflow: hidden; }
-    .nav-wrapper .navbar img {
+    .nav-wrapper .navbar a {
       height: 65%;
       width: auto;
       justify-self: start;
       margin-left: 7vw; }
+      .nav-wrapper .navbar a img {
+        height: 100%; }
     .nav-wrapper .navbar ul {
       list-style: none;
       display: grid;

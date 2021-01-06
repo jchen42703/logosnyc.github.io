@@ -36,11 +36,14 @@
     overflow: hidden;
 
     // logo
-    img {
+    a {
       height: 65%;
       width: auto;
       justify-self: start;
       margin-left: 7vw;
+      img {
+        height: 100%;
+      }
     }
 
     ul {
