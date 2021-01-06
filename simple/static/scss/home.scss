@@ -100,11 +100,8 @@ a.button1:hover {
 }
 
 .service {
-  // @extend .page-container;
   color: $white;
-  // margin: 5vw;
   max-width: 50vw;
-  // flex: 0 0 50%;
   img {
     vertical-align: middle;
     border: 0;
@@ -152,4 +149,34 @@ a.button1:hover {
   padding: 5% 15%;
   /* position: absolute;
     bottom: 0; */
+}
+
+@media only screen and (max-width: 720px) {
+  .two-columns {
+    // becomes 2 rows
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+  }
+
+  .service {
+    max-width: 100vw;
+    margin-left: 1vw !important;
+    margin-bottom: 5vh;
+
+    img {
+      margin: 0;
+      max-width: 90vw;
+    }
+    .wrapper {
+      max-width: 90vw;
+      min-width: 75vw;
+    }
+    .content {
+      max-width: 90vw;
+      min-width: 75vw;
+    }
+  }
 }

@@ -137,3 +137,24 @@ a.button1:hover {
   padding: 5% 15%;
   /* position: absolute;
     bottom: 0; */ }
+
+@media only screen and (max-width: 720px) {
+  .two-columns {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-row-gap: 0;
+    grid-column-gap: 0; }
+  .service {
+    max-width: 100vw;
+    margin-left: 1vw !important;
+    margin-bottom: 5vh; }
+    .service img {
+      margin: 0;
+      max-width: 90vw; }
+    .service .wrapper {
+      max-width: 90vw;
+      min-width: 75vw; }
+    .service .content {
+      max-width: 90vw;
+      min-width: 75vw; } }
