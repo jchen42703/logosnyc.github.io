@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 
 body {
   background-repeat: no-repeat;
-  font-family: "Montserrat";
+  font-family: "Ubuntu", sans-serif;
 }
 
 .hero {
@@ -22,7 +21,8 @@ html {
 
 #hero-heading {
   font-size: 7rem;
-  font-family: "Shadows into Light", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 50px;
 }
 
 .btn-hero {
@@ -98,7 +98,7 @@ html {
 .vision {
   margin-top: 20rem;
   text-align: center;
-  height: 50vh;
+  height: 40vh;
 }
 
 .vision h1 {

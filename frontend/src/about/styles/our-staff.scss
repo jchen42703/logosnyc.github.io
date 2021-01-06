@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 
 *{
@@ -14,7 +13,7 @@ html{
 
 body{
     background-repeat: no-repeat;
-    font-family: "Montserrat";
+    font-family: "Ubuntu", sans-serif;
 
 }
 
@@ -63,7 +62,7 @@ p{
     background: #f6f6f6;
     font-size: 2rem;
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: "Ubuntu", sans-serif;
     color: black;
     border-radius: 10px;
     transition: background 0.5s;
@@ -77,7 +76,7 @@ p{
     background: black;
     font-size: 2rem;
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: "Ubuntu", sans-serif;
     color: white;
     border-radius: 10px;
     transition: background 0.5s;
@@ -86,13 +85,13 @@ p{
 
 #hero-heading{
     font-size: 7rem;
-    font-family: "Shadows into Light", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 
 }
 
 #img-heading{
     margin-top: -17px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 5rem;
     text-align: center;
     font-weight: 400;
@@ -102,7 +101,7 @@ p{
 .inner-container a{
     margin-top:20px;
     font-size: 1.3em;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .btn-hero{
