@@ -3,78 +3,90 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="static/navbar/navbar.css" />
-    <script src="static/navbar/navbar.js"></script>
-
-    <!-- <link
-              rel="stylesheet"
-              href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-              integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-              crossorigin="anonymous"
-            />
-
-            <script
-              src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-              integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-              crossorigin="anonymous"
-            >
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    <link rel="stylesheet" href="static/css/home.css" />
+    <link rel="stylesheet" href="static/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
-    ></script>
-    -->
+    />
     <title>Logos Community Church</title>
   </head>
 
   <body>
-    <header id="navbar">
-      <nav class="navbar-container container">
-        <a href="/" class="home-link">
-          <img
-            src="http://em.logosny.org/wp-content/uploads/2016/11/LCC-EM-Website-Logo-e1478292276929.png"
-            alt=""
-          />
-        </a>
-        <button
-          type="button"
-          class="navbar-toggle"
-          aria-label="Open navigation menu"
-        >
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-menu detached">
-          <ul class="navbar-links">
-            <li class="navbar-item">
-              <a class="navbar-link" href="pages/about.html">About</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="pages/im-new.html">I'm New</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="pages/connect.html">Connect</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="pages/ministries.html">Ministries</a>
-            </li>
-          </ul>
+    <div class="hero-bg">
+      <div class="page-wrapper">
+        <div class="nav-wrapper">
+          <nav class="navbar transparent">
+            <img src="./media/logo_w_long_fixed.svg" alt="Logo" />
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul>
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">About</a></li>
+              <li class="nav-item"><a href="#">Connect</a></li>
+              <li class="nav-item"><a href="#">Sermons</a></li>
+              <li class="nav-item"><a href="#">Giving</a></li>
+            </ul>
+          </nav>
         </div>
-      </nav>
-    </header>
+      </div>
 
-    <div class="hero-image-welcome">
-      <div class="hero-text">
-        <h1>Welcome to Logos</h1>
-        <h3>
-          All of our activities have been temporarily moved online. For worship
-          service at 11:45 A.M. on Sunday, please go to bit.ly/EMLiveWorship.
-        </h3>
+      <script src="static/navbar.js"></script>
+
+      <div class="hero-image-welcome">
+        <div class="hero-text">
+          <div class="hero-header">
+            <span>IN UNITY WE SERVE</span>
+            <hr />
+            <a href="#" class="button1" style="margin-top: 5%"
+              >WATCH THE LATEST MESSAGE</a
+            >
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="two-columns">
+      <div class="service" style="margin-left: 5vw">
+        <img
+          src="https://www.logosny.org/ch/images/phocagallery/test/thumbs/phoca_thumb_l_10537185_568276713301322_1103929964641965087_o.jpg"
+          alt=""
+        />
+        <div class="wrapper">
+          <h3 class="header">ONLINE SERVICE</h3>
+          <div class="content">
+            <span>English</span>
+            <p>Sunday @11:45 A.M.</p>
+            <a href="#" class="button1" style="margin-top: 5%">WATCH LIVE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="service">
+        <img
+          src="https://www.logosny.org/ch/images/phocagallery/test/thumbs/phoca_thumb_l_10537185_568276713301322_1103929964641965087_o.jpg"
+          alt=""
+        />
+        <div class="wrapper">
+          <h3 class="header">IN-PERSON SERVICE</h3>
+          <div class="content">
+            <p>Every Sunday @11:45 A.M.</p>
+            <br />
+            <a href="#" class="button1" style="margin-top: 5%"
+              >REGISTER FOR SERVICE</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=".announcements-container"></div>
+
     <footer>
       <div class="contact-container">
         <div>
@@ -86,7 +98,6 @@
             Jesus Christ to the community.
           </p>
         </div>
-
         <div>
           <h3>OUR LOCATION</h3>
         </div>
@@ -99,22 +110,5 @@
         </div>
       </div>
     </footer>
-    <!-- <footer>
-      <h3 id="contact">Contact</h3>
-      <span
-        >Contact me at jchen42703 "at" gmail "dot" com or at the links
-        below.</span
-      >
-      <br />
-      <a href="https://www.linkedin.com/in/joseph-chen-47b74615a/">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/jchen42703">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.instagram.com/jchen___zz/">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </footer> -->
   </body>
 </html>
