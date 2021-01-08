@@ -128,16 +128,6 @@ a.button1:hover {
     display: block;
     text-align: left; }
 
-.contact-container {
-  color: #655c56;
-  background-color: #effcef;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10%;
-  padding: 5% 15%;
-  /* position: absolute;
-    bottom: 0; */ }
-
 @media only screen and (max-width: 720px) {
   .two-columns {
     display: grid;
