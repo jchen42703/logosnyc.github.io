@@ -1,0 +1,182 @@
+@import "./_colors";
+@import "./_general";
+/* general */
+/* html body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+/* hero */
+.hero-bg {
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-image-welcome {
+  /* width: 100vw; */
+  width: 100%;
+  height: 80vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+}
+
+.hero-text {
+  display: inline-block;
+  text-align: center;
+  color: $white;
+  margin: 0% 25vw;
+}
+
+.hero-text .hero-header {
+  margin-bottom: 5vh;
+}
+
+.hero-text span {
+  font-size: 55px;
+  /* font-style: italic; */
+  /* border-bottom: solid 3px #019fb6; */
+  font-weight: 700;
+  margin-bottom: 10vh;
+  /* letter-spacing: 0.2em; */
+  transition: color 0.3s ease-out;
+}
+
+.hero-text hr {
+  margin-bottom: 2vh;
+  border: 2px solid $white;
+}
+
+.hero-text p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+a.button1 {
+  color: $dark-grey;
+  background-color: $green;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer !important;
+
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  // border: 0.15em solid $white;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+a.button1:hover {
+  color: $dark-grey;
+  background-color: $white;
+}
+
+.two-columns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  padding-left: 15px;
+  padding-right: 15px;
+  grid-column-gap: 1vw;
+}
+
+.service {
+  color: $white;
+  max-width: 50vw;
+  img {
+    vertical-align: middle;
+    border: 0;
+    max-width: 40vw;
+  }
+  .wrapper {
+    background: $dark-grey;
+    margin-left: 3.5em;
+    margin-top: -6em;
+    margin-right: 1em;
+    position: relative !important;
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+    max-width: 40vw;
+  }
+  .header {
+    background: $green;
+    padding: 10px 16px;
+    margin-top: -1.375em;
+    margin-bottom: 0.5rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: inline-block !important;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .content {
+    white-space: pre-wrap;
+    padding: 1em 2.25em 2.325em 2.25em;
+    font-size: 1.5em;
+    max-width: 550px;
+    display: block;
+    text-align: left;
+  }
+}
+
+.contact-container {
+  color: $dark-grey;
+  background-color: $white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10%;
+  padding: 5% 15%;
+  /* position: absolute;
+    bottom: 0; */
+}
+
+@media only screen and (max-width: 720px) {
+  .two-columns {
+    // becomes 2 rows
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+  }
+
+  .service {
+    max-width: 100vw;
+    margin-left: 1vw !important;
+    margin-bottom: 5vh;
+
+    img {
+      margin: 0;
+      max-width: 90vw;
+    }
+    .wrapper {
+      max-width: 90vw;
+      min-width: 75vw;
+    }
+    .content {
+      max-width: 90vw;
+      min-width: 75vw;
+    }
+  }
+}
