@@ -29,3 +29,7 @@
   .contact-container hr {
     margin: 2vh 25vw;
     border: 2px solid #effcef; }
+
+@media only screen and (max-width: 720px) {
+  .contact-container {
+    padding: 5vh 15vw 10vh 15vw; } }

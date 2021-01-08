@@ -26,3 +26,8 @@
     border: 2px solid $white;
   }
 }
+@media only screen and (max-width: 720px) {
+  .contact-container {
+    padding: 5vh 15vw 10vh 15vw;
+  }
+}
