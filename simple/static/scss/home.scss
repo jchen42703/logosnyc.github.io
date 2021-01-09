@@ -59,7 +59,7 @@
 }
 
 a.button1 {
-  color: $dark-grey;
+  color: $white;
   background-color: $green;
   font-weight: 700;
   text-decoration: underline;
@@ -67,7 +67,7 @@ a.button1 {
 
   display: inline-block;
   padding: 0.35em 1.2em;
-  // border: 0.15em solid $white;
+  border: 0.15em solid $green;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -76,7 +76,9 @@ a.button1 {
   transition: all 0.2s;
 
   &:hover {
-    color: $dark-grey;
+    // color: $dark-grey;
+    // background-color: $white;
+    color: $green;
     background-color: $white;
   }
 }
