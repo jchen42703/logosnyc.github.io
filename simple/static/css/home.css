@@ -41,26 +41,19 @@
   text-align: center;
   color: #effcef;
   margin: 0% 25vw; }
-
-.hero-text .hero-header {
-  margin-bottom: 5vh; }
-
-.hero-text span {
-  font-size: 55px;
-  /* font-style: italic; */
-  /* border-bottom: solid 3px #019fb6; */
-  font-weight: 700;
-  margin-bottom: 10vh;
-  /* letter-spacing: 0.2em; */
-  transition: color 0.3s ease-out; }
-
-.hero-text hr {
-  margin-bottom: 2vh;
-  border: 2px solid #effcef; }
-
-.hero-text p {
-  font-size: 22px;
-  font-weight: 700; }
+  .hero-text .hero-header {
+    margin-bottom: 5vh; }
+  .hero-text span {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 10vh;
+    transition: color 0.3s ease-out; }
+  .hero-text hr {
+    margin: 0% 2vw 2vh 2vw;
+    border: 2px solid #effcef; }
+  .hero-text p {
+    font-size: 22px;
+    font-weight: 700; }
 
 a.button1 {
   color: #655c56;
@@ -76,10 +69,9 @@ a.button1 {
   text-decoration: none;
   text-align: center;
   transition: all 0.2s; }
-
-a.button1:hover {
-  color: #655c56;
-  background-color: #effcef; }
+  a.button1:hover {
+    color: #655c56;
+    background-color: #effcef; }
 
 .two-columns {
   width: 100%;
@@ -121,12 +113,21 @@ a.button1:hover {
     font-size: 1.5em;
     font-weight: bold; }
   .service .content {
-    white-space: pre-wrap;
     padding: 1em 2.25em 2.325em 2.25em;
     font-size: 1.5em;
     max-width: 550px;
     display: block;
     text-align: left; }
+
+.two-button-hgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2vw;
+  margin-top: 1vh; }
+
+hr {
+  margin: 5vh 15vw;
+  border: 2px solid #655c56; }
 
 @media only screen and (max-width: 720px) {
   .two-columns {
