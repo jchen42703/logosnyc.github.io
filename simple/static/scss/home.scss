@@ -140,17 +140,6 @@ a.button1:hover {
   }
 }
 
-.contact-container {
-  color: $dark-grey;
-  background-color: $white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10%;
-  padding: 5% 15%;
-  /* position: absolute;
-    bottom: 0; */
-}
-
 @media only screen and (max-width: 720px) {
   .two-columns {
     // becomes 2 rows
