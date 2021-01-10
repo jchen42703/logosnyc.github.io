@@ -1,0 +1,196 @@
+/* BASIC SETUP */
+.page-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.nav-wrapper {
+  width: 100%;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  /* NAVIGATION */
+}
+
+.nav-wrapper .transparent {
+  background-color: transparent;
+}
+
+.nav-wrapper .transparent .nav-item a {
+  color: #effcef;
+}
+
+.nav-wrapper .vanilla {
+  background-color: #effcef;
+}
+
+.nav-wrapper .vanilla .nav-item a {
+  color: #655c56;
+}
+
+.nav-wrapper .navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  min-height: 96px;
+  overflow: hidden;
+}
+
+.nav-wrapper .navbar a {
+  height: 65%;
+  width: auto;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 7vw;
+}
+
+.nav-wrapper .navbar a img {
+  height: 100%;
+}
+
+.nav-wrapper .navbar ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  min-width: 50vw;
+  grid-gap: 1.5vw;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 5vw;
+}
+
+.nav-wrapper .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-wrapper .nav-item a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  /* letter-spacing: 0.1em; */
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  opacity: 95%;
+  /* position: relative; */
+  /** Underline Animation */
+}
+
+.nav-wrapper .nav-item a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #94d3ac;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.nav-wrapper .nav-item a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* MOBILE MENU & ANIMATION */
+.menu-toggle {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 25px;
+  display: none;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle .white {
+  background-color: #effcef;
+}
+
+.menu-toggle .dark-grey {
+  background-color: #655c56;
+}
+
+#mobile-menu.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Devices - Phones/Tablets */
+@media only screen and (max-width: 720px) {
+  /* MOBILE NAVIGATION */
+  .nav-wrapper .navbar ul {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    top: 65px;
+    background-color: #655c56;
+    width: 100%;
+    height: calc(100vh - 55px);
+    -webkit-transform: translate(-101%);
+            transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+  }
+  .nav-wrapper .navbar li {
+    padding: 15px;
+  }
+  .nav-wrapper .navbar li:first-child {
+    margin-top: 50px;
+  }
+  .nav-wrapper .navbar li a {
+    color: #effcef;
+    font-size: 1rem;
+  }
+  .menu-toggle,
+  .bar {
+    display: block;
+    cursor: pointer;
+  }
+  .mobile-nav {
+    -webkit-transform: translate(0%) !important;
+            transform: translate(0%) !important;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
