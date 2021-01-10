@@ -10,3 +10,13 @@
   width: 100vw;
   height: 100vh;
 }
+
+.padding {
+  padding: 5vh 0vw;
+  background-color: $white;
+}
+
+hr {
+  margin: 5vh 15vw;
+  border: 2px solid $dark-grey;
+}

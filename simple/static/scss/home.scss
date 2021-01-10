@@ -81,22 +81,14 @@ a.button1 {
   }
 }
 
-hr {
-  margin: 5vh 15vw;
-  border: 2px solid $dark-grey;
-}
-
-.padding {
-  margin: 10vh 15vw;
-}
-
 .two-columns {
+  background: $white;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5vh;
+  padding-top: 5vh;
   padding-left: 15px;
   padding-right: 15px;
   grid-column-gap: 1vw;
@@ -149,18 +141,26 @@ hr {
   margin-top: 1vh;
 }
 
+.white-bg {
+  display: flex;
+  justify-content: center;
+  background-color: $white;
+}
+
 .h-overlap-container {
-  display: inline-block;
+  display: block;
   position: relative;
   margin: 5vh 15vw;
+  background-color: $white;
+  max-width: 50vw;
+
   img {
-    // display: block;
+    padding: 0;
     position: relative;
-    margin-left: 20vw;
-    min-width: 30vw;
+    padding-left: 20vw;
+    width: 70vw;
   }
   .img-card {
-    // display: block;
     position: absolute;
     background-color: $dark-grey;
     color: $white;
@@ -168,7 +168,25 @@ hr {
     z-index: 1;
     padding: 1em 2.25em 2.325em 2.25em;
     left: -10vw;
-    top: 20vh;
+    top: 5vh;
+    .content {
+      padding: 1em 2.25em 2.325em 2.25em;
+      font-size: 18px;
+      max-width: 550px;
+      display: block;
+      text-align: left;
+      margin-top: 4vh;
+    }
+    .header {
+      color: $white;
+      background: $green;
+      padding: 10px 16px;
+      margin-top: -1.375em;
+      display: inline-block !important;
+      font-size: 34px;
+      font-weight: bold;
+      position: absolute;
+    }
   }
   .four-buttons {
     display: grid;
@@ -178,20 +196,6 @@ hr {
     column-gap: 2vw;
     position: relative;
     margin: 5vh 5vw;
-  }
-
-  .header {
-    color: $white;
-    background: $green;
-    padding: 10px 16px;
-    margin-top: -1.375em;
-    margin-bottom: 0.5rem;
-    margin-left: 1em;
-    margin-right: 1em;
-    display: inline-block !important;
-    font-size: 34px;
-    font-weight: bold;
-    position: absolute;
   }
 }
 
@@ -221,6 +225,53 @@ hr {
     .content {
       max-width: 90vw;
       min-width: 75vw;
+    }
+  }
+
+  .h-overlap-container {
+    // display: grid;
+    // grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 0 5%;
+    text-align: center;
+    width: 100%;
+
+    img {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .img-card {
+      display: block;
+      position: relative;
+      background-color: transparent;
+      color: $dark-grey;
+      width: 100%;
+      z-index: inherit;
+      padding: 0;
+      left: 0;
+      top: 0;
+      .content {
+        position: relative;
+        padding: 0;
+        text-align: center;
+      }
+      .header {
+        color: $white;
+        background: $dark-grey;
+        padding: 10px 16px;
+        margin: 0;
+        font-size: 34px;
+        font-weight: bold;
+        position: relative;
+      }
+      .four-buttons {
+        justify-content: center;
+      }
     }
   }
 }
