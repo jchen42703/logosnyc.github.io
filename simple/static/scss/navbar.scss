@@ -1,5 +1,6 @@
 /* BASIC SETUP */
 @import "./_colors";
+@import "./_general";
 
 .page-wrapper {
   width: 100%;
@@ -14,12 +15,15 @@
 
   .transparent {
     background-color: transparent;
+
     .nav-item a {
       color: $white;
     }
   }
+
   .vanilla {
     background-color: $white;
+
     .nav-item a {
       color: $dark-grey;
     }
@@ -41,6 +45,7 @@
       width: auto;
       justify-self: start;
       margin-left: 7vw;
+
       img {
         height: 100%;
       }
@@ -62,15 +67,13 @@
     justify-content: center;
 
     a {
-      // color: $white;
       font-size: 16px;
       font-weight: 700;
       text-decoration: none;
-      /* letter-spacing: 0.1em; */
       text-transform: uppercase;
       transition: color 0.3s ease-out;
       opacity: 95%;
-      /* position: relative; */
+
       /** Underline Animation */
       &:after {
         display: block;
@@ -136,7 +139,7 @@
 
 /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: map-get($breakpoints, "tablet")) {
   /* MOBILE NAVIGATION */
 
   .nav-wrapper .navbar {
@@ -154,6 +157,7 @@
       text-align: center;
       overflow: hidden;
     }
+
     li {
       padding: 15px;
 

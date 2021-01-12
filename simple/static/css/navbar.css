@@ -1,4 +1,42 @@
 /* BASIC SETUP */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.7; }
+
+.padding-small {
+  padding: 5vh 0vw;
+  background-color: #effcef; }
+
+.padding-large {
+  padding: 15vh 0vw;
+  background-color: #effcef; }
+
+hr {
+  margin: 5vh 15vw;
+  border: 2px solid #655c56; }
+
+a.button1 {
+  color: #effcef;
+  background-color: #94d3ac;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer !important;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.15em solid #94d3ac;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s; }
+  a.button1:hover {
+    color: #94d3ac;
+    background-color: transparent; }
+
 .page-wrapper {
   width: 100%;
   height: auto; }
@@ -47,11 +85,9 @@
       font-size: 16px;
       font-weight: 700;
       text-decoration: none;
-      /* letter-spacing: 0.1em; */
       text-transform: uppercase;
       transition: color 0.3s ease-out;
       opacity: 95%;
-      /* position: relative; */
       /** Underline Animation */ }
       .nav-wrapper .nav-item a:after {
         display: block;
@@ -97,7 +133,7 @@
   transform: translateY(-8px) rotate(-45deg); }
 
 /* Mobile Devices - Phones/Tablets */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   /* MOBILE NAVIGATION */
   .nav-wrapper .navbar ul {
     margin: 0;
