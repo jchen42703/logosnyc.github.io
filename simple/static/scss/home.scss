@@ -1,6 +1,7 @@
 @import "./_colors";
 @import "./_general";
 @import "./fontFormatting";
+@import "_include-media";
 
 /* hero */
 .hero-bg {
@@ -71,15 +72,32 @@
   padding-left: 15px;
   padding-right: 15px;
   grid-column-gap: 1vw;
+  @include media("<=tablet") {
+    // becomes 2 rows
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+  }
 }
 
 .service {
   color: $white;
   max-width: 50vw;
+  @include media("<=tablet") {
+    max-width: 100vw;
+    margin-left: 1vw !important;
+    margin-bottom: 5vh;
+  }
   img {
     vertical-align: middle;
     border: 0;
     max-width: 40vw;
+    @include media("<=tablet") {
+      margin: 0;
+      max-width: 90vw;
+    }
   }
   .wrapper {
     background: $dark-grey;
@@ -92,6 +110,10 @@
     font-size: $content-size;
     text-align: left;
     max-width: 40vw;
+    @include media("<=tablet") {
+      max-width: 90vw;
+      min-width: 75vw;
+    }
   }
   .header {
     background: $green;
@@ -103,6 +125,10 @@
     max-width: 550px;
     display: block;
     text-align: left;
+    @include media("<=tablet") {
+      max-width: 90vw;
+      min-width: 75vw;
+    }
   }
 }
 
@@ -117,10 +143,12 @@
   display: flex;
   justify-content: center;
   background-color: $white;
+  min-height: 65vh;
 }
 
 .grey-bg {
   background-color: $grey;
+  width: 100%;
 }
 
 .h-overlap-container {
@@ -129,12 +157,26 @@
   margin: 5vh 15vw;
   background-color: $white;
   max-width: 50vw;
-
+  @include media("<=tablet") {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 0 5%;
+    text-align: center;
+    width: 100%;
+  }
   img {
     padding: 0;
     position: relative;
     padding-left: 20vw;
     width: 70vw;
+    @include media("<=tablet") {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
   }
   .img-card {
     position: absolute;
@@ -145,6 +187,17 @@
     padding: 0 2.25em 2.325em 2.25em;
     left: -10vw;
     top: 5vh;
+    @include media("<=tablet") {
+      display: block;
+      position: relative;
+      background-color: transparent;
+      color: $dark-grey;
+      width: 100%;
+      z-index: inherit;
+      padding: 0;
+      left: 0;
+      top: 0;
+    }
     .content {
       padding: 0;
       font-size: $content-size;
@@ -152,14 +205,28 @@
       display: block;
       text-align: left;
       margin-top: 4vh;
+      @include media("<=tablet") {
+        position: relative;
+        padding: 0;
+        text-align: center;
+      }
     }
     .header {
       color: $white;
       background: $green;
+      @include media("<=tablet") {
+        color: $white;
+        background: $dark-grey;
+        margin: 0;
+        position: relative;
+      }
     }
   }
   p {
     margin-left: 5vw;
+    @include media("<=tablet") {
+      margin: 0;
+    }
   }
   .four-buttons {
     display: grid;
@@ -169,18 +236,27 @@
     column-gap: 2vw;
     position: relative;
     margin: 5vh 5vw;
+    @include media("<=tablet") {
+      justify-content: center;
+    }
   }
 }
 
 .card-grid-container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 45vh;
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10vw;
-    margin: 10vh 5vw 5vh 15%;
+    column-gap: 10%;
+    margin: 5% 5% 5% 15%;
+    @include media("<=tablet") {
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 10%;
+      margin: 5%;
+      grid-template-columns: auto;
+    }
   }
   .card {
     position: relative;
@@ -221,96 +297,14 @@
     background-color: $dark-grey;
     color: $white;
     margin-left: 15%;
+    @include media("<=tablet") {
+      margin-left: 5%;
+    }
   }
   .green {
     background-color: $green;
   }
   .dark-grey {
     background-color: $dark-grey;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  .two-columns {
-    // becomes 2 rows
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: auto;
-    grid-row-gap: 0;
-    grid-column-gap: 0;
-  }
-
-  .service {
-    max-width: 100vw;
-    margin-left: 1vw !important;
-    margin-bottom: 5vh;
-    img {
-      margin: 0;
-      max-width: 90vw;
-    }
-    .wrapper {
-      max-width: 90vw;
-      min-width: 75vw;
-    }
-    .content {
-      max-width: 90vw;
-      min-width: 75vw;
-    }
-  }
-
-  .h-overlap-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    margin: 0 5%;
-    text-align: center;
-    width: 100%;
-    img {
-      position: relative;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-    .img-card {
-      display: block;
-      position: relative;
-      background-color: transparent;
-      color: $dark-grey;
-      width: 100%;
-      z-index: inherit;
-      padding: 0;
-      left: 0;
-      top: 0;
-      .content {
-        position: relative;
-        padding: 0;
-        text-align: center;
-      }
-      .header {
-        color: $white;
-        background: $dark-grey;
-        margin: 0;
-        position: relative;
-      }
-      p {
-        margin: 0;
-      }
-      .four-buttons {
-        justify-content: center;
-      }
-    }
-  }
-
-  .card-grid-container {
-    .header {
-      margin-left: 5%;
-    }
-    .grid {
-      grid-template-rows: repeat(3, 1fr);
-      row-gap: 15vh;
-      margin: 5%;
-      grid-template-columns: auto;
-    }
   }
 }

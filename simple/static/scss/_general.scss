@@ -6,6 +6,12 @@
   line-height: 1.7;
 }
 
+$breakpoints: (
+  phone: 640px,
+  tablet: 768px,
+  desktop: 1024px,
+) !default;
+
 .padding-small {
   padding: 5vh 0vw;
   background-color: $white;
