@@ -153,7 +153,8 @@ $header-neg-space: -1.375em;
   width: 100%;
 }
 
-.h-overlap-container {
+// img-card to the left of the image
+.h-overlap-container-l {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -251,6 +252,23 @@ $header-neg-space: -1.375em;
     @include media("<=tablet") {
       justify-content: center;
     }
+  }
+}
+
+// img-card to the right of the image
+.h-overlap-container-r {
+  @extend .h-overlap-container-l;
+  img {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 13;
+  }
+  .img-card {
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 11;
   }
 }
 

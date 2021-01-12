@@ -159,14 +159,14 @@ a.button1 {
   background-color: #f6f7f5;
   width: 100%; }
 
-.h-overlap-container {
+.h-overlap-container-l, .h-overlap-container-r {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   background-color: #effcef;
   margin: 0 15%; }
   @media (max-width: 768px) {
-    .h-overlap-container {
+    .h-overlap-container-l, .h-overlap-container-r {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -176,9 +176,9 @@ a.button1 {
       width: 100%; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .h-overlap-container {
+  .h-overlap-container-l, .h-overlap-container-r {
     margin: 0; } }
-  .h-overlap-container img {
+  .h-overlap-container-l img, .h-overlap-container-r img {
     width: 60vw;
     position: relative;
     grid-column-start: 4;
@@ -186,11 +186,11 @@ a.button1 {
     grid-row-start: 1;
     grid-row-end: 13; }
     @media (max-width: 768px) {
-      .h-overlap-container img {
+      .h-overlap-container-l img, .h-overlap-container-r img {
         width: 70%;
         padding: 0;
         margin: 0 5%; } }
-  .h-overlap-container .img-card {
+  .h-overlap-container-l .img-card, .h-overlap-container-r .img-card {
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 3;
@@ -200,7 +200,7 @@ a.button1 {
     background-color: #655c56;
     padding: 0 2.25em 2.325em 2.25em; }
     @media (max-width: 768px) {
-      .h-overlap-container .img-card {
+      .h-overlap-container-l .img-card, .h-overlap-container-r .img-card {
         display: block;
         position: relative;
         background-color: transparent;
@@ -208,35 +208,35 @@ a.button1 {
         padding: 0; } }
 
 @media (min-width: 768px) and (max-width: 1240px) {
-  .h-overlap-container .img-card {
+  .h-overlap-container-l .img-card, .h-overlap-container-r .img-card {
     grid-column-start: 2;
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 13; } }
-    .h-overlap-container .img-card .content {
+    .h-overlap-container-l .img-card .content, .h-overlap-container-r .img-card .content {
       font-size: 1em;
       max-width: 550px;
       margin-top: 4vh; }
       @media (max-width: 768px) {
-        .h-overlap-container .img-card .content {
+        .h-overlap-container-l .img-card .content, .h-overlap-container-r .img-card .content {
           position: relative;
           padding: 0;
           text-align: center;
           margin-right: 0; } }
-    .h-overlap-container .img-card .header {
+    .h-overlap-container-l .img-card .header, .h-overlap-container-r .img-card .header {
       color: #effcef;
       background: #94d3ac; }
       @media (max-width: 768px) {
-        .h-overlap-container .img-card .header {
+        .h-overlap-container-l .img-card .header, .h-overlap-container-r .img-card .header {
           background: #655c56;
           position: relative;
           margin: 0; } }
-  .h-overlap-container p {
+  .h-overlap-container-l p, .h-overlap-container-r p {
     margin-left: 5vw; }
     @media (max-width: 768px) {
-      .h-overlap-container p {
+      .h-overlap-container-l p, .h-overlap-container-r p {
         margin: 0; } }
-  .h-overlap-container .four-buttons {
+  .h-overlap-container-l .four-buttons, .h-overlap-container-r .four-buttons {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -245,8 +245,20 @@ a.button1 {
     position: relative;
     margin: 5vh 5vw; }
     @media (max-width: 768px) {
-      .h-overlap-container .four-buttons {
+      .h-overlap-container-l .four-buttons, .h-overlap-container-r .four-buttons {
         justify-content: center; } }
+
+.h-overlap-container-r img {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 13; }
+
+.h-overlap-container-r .img-card {
+  grid-column-start: 6;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 11; }
 
 .container-header-neg {
   width: 100%;
