@@ -6,17 +6,40 @@
   line-height: 1.7;
 }
 
-.page-container {
-  width: 100vw;
-  height: 100vh;
+.padding-small {
+  padding: 5vh 0vw;
+  background-color: $white;
 }
 
-.padding {
-  padding: 5vh 0vw;
+.padding-large {
+  padding: 15vh 0vw;
   background-color: $white;
 }
 
 hr {
   margin: 5vh 15vw;
   border: 2px solid $dark-grey;
+}
+
+a.button1 {
+  color: $white;
+  background-color: $green;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer !important;
+
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.15em solid $green;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $green;
+    background-color: transparent;
+  }
 }

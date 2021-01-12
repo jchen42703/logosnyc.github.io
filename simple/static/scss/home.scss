@@ -1,12 +1,6 @@
 @import "./_colors";
 @import "./_general";
-/* general */
-/* html body {
-  font-family: "Lato", sans-serif;
-  line-height: 1.7;
-  margin: 0;
-  box-sizing: border-box;
-} */
+@import "./fontFormatting";
 
 /* hero */
 .hero-bg {
@@ -31,54 +25,39 @@
 
   /* Text styles */
   text-align: center;
-}
 
-.hero-text {
-  display: inline-block;
-  text-align: center;
-  color: $white;
-  margin: 0% 25vw;
-  .hero-header {
-    margin-bottom: 5vh;
-  }
-  span {
-    font-size: 55px;
-    font-weight: 700;
-    margin-bottom: 10vh;
-    transition: color 0.3s ease-out;
-  }
-  hr {
-    margin: 0% 2vw 2vh 2vw;
-    // margin-bottom: 2vh;
-    border: 2px solid $white;
-  }
-  p {
-    font-size: 22px;
-    font-weight: 700;
+  .hero-text {
+    display: inline-block;
+    text-align: center;
+    color: $white;
+    margin: 0% 25vw;
+    .hero-header {
+      margin-bottom: 5vh;
+    }
+    span {
+      font-size: 55px;
+      font-weight: bold;
+      margin-bottom: 10vh;
+      transition: color 0.3s ease-out;
+    }
+    hr {
+      margin: 0% 2vw 2vh 2vw;
+      border: 2px solid $white;
+    }
   }
 }
 
-a.button1 {
+.header {
+  display: inline-block !important;
   color: $white;
-  background-color: $green;
-  font-weight: 700;
-  text-decoration: underline;
-  cursor: pointer !important;
-
-  display: inline-block;
-  padding: 0.35em 1.2em;
-  border: 0.15em solid $green;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  text-align: center;
-  transition: all 0.2s;
-
-  &:hover {
-    color: $green;
-    background-color: transparent;
-  }
+  background: $dark-grey;
+  padding: 10px 16px;
+  margin-top: -1.375em;
+  margin-bottom: 0.5rem;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 34px;
+  font-weight: bold;
 }
 
 .two-columns {
@@ -109,21 +88,14 @@ a.button1 {
     margin-right: 1em;
     position: relative !important;
     display: block;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 18px;
     text-align: left;
     max-width: 40vw;
   }
   .header {
     background: $green;
-    padding: 10px 16px;
-    margin-top: -1.375em;
-    margin-bottom: 0.5rem;
-    margin-left: 1em;
-    margin-right: 1em;
-    display: inline-block !important;
-    font-size: 1.5em;
-    font-weight: bold;
+    color: $white;
   }
   .content {
     padding: 1em 2.25em 2.325em 2.25em;
@@ -147,6 +119,10 @@ a.button1 {
   background-color: $white;
 }
 
+.grey-bg {
+  background-color: $grey;
+}
+
 .h-overlap-container {
   display: block;
   position: relative;
@@ -166,11 +142,11 @@ a.button1 {
     color: $white;
     width: 45vw;
     z-index: 1;
-    padding: 1em 2.25em 2.325em 2.25em;
+    padding: 0 2.25em 2.325em 2.25em;
     left: -10vw;
     top: 5vh;
     .content {
-      padding: 1em 2.25em 2.325em 2.25em;
+      padding: 0;
       font-size: 18px;
       max-width: 550px;
       display: block;
@@ -180,13 +156,10 @@ a.button1 {
     .header {
       color: $white;
       background: $green;
-      padding: 10px 16px;
-      margin-top: -1.375em;
-      display: inline-block !important;
-      font-size: 34px;
-      font-weight: bold;
-      position: absolute;
     }
+  }
+  p {
+    margin-left: 5vw;
   }
   .four-buttons {
     display: grid;
@@ -196,6 +169,47 @@ a.button1 {
     column-gap: 2vw;
     position: relative;
     margin: 5vh 5vw;
+  }
+}
+
+.card-grid-container {
+  position: relative;
+  width: 100vw;
+  min-height: 45vh;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10vw;
+    margin: 10vh 5vw 5vh 15%;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    color: $dark-grey;
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+  }
+  .card-stripe {
+    position: absolute;
+    width: 50px;
+    padding-bottom: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .header {
+    background-color: $dark-grey;
+    color: $white;
+    margin-left: 15%;
+  }
+  .green {
+    background-color: $green;
+  }
+  .dark-grey {
+    background-color: $dark-grey;
   }
 }
 
@@ -229,8 +243,6 @@ a.button1 {
   }
 
   .h-overlap-container {
-    // display: grid;
-    // grid-template-rows: repeat(2, 1fr);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,11 +275,11 @@ a.button1 {
       .header {
         color: $white;
         background: $dark-grey;
-        padding: 10px 16px;
         margin: 0;
-        font-size: 34px;
-        font-weight: bold;
         position: relative;
+      }
+      p {
+        margin: 0;
       }
       .four-buttons {
         justify-content: center;
