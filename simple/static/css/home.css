@@ -254,6 +254,7 @@ a.button1 {
   background-color: #effcef; }
 
 .card-grid-container {
+  display: inline-block;
   position: relative;
   width: 100%;
   min-height: 45vh; }
@@ -264,10 +265,9 @@ a.button1 {
     margin: 5% 5% 5% 15%; }
     @media (max-width: 768px) {
       .card-grid-container .grid {
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 10%;
-        margin: 5%;
-        grid-template-columns: auto; } }
+        display: flex;
+        flex-flow: column wrap;
+        margin: 5%; } }
   .card-grid-container .card {
     position: relative;
     display: flex;
@@ -275,7 +275,8 @@ a.button1 {
     color: #655c56;
     text-align: left;
     font-weight: normal;
-    padding: 1rem; }
+    padding: 1rem;
+    margin-bottom: 5%; }
     .card-grid-container .card .card-descrip {
       margin-left: 60px; }
       .card-grid-container .card .card-descrip h2 {
@@ -287,7 +288,6 @@ a.button1 {
     .card-grid-container .card .card-stripe {
       position: absolute;
       width: 50px;
-      padding-bottom: 100%;
       top: 0;
       left: 0;
       bottom: 0; }

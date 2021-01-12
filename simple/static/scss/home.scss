@@ -263,6 +263,7 @@ $header-neg-space: -1.375em;
 
 // Upcoming Events Container
 .card-grid-container {
+  display: inline-block;
   position: relative;
   width: 100%;
   min-height: 45vh;
@@ -273,10 +274,9 @@ $header-neg-space: -1.375em;
     column-gap: 10%;
     margin: 5% 5% 5% 15%;
     @include media("<=tablet") {
-      grid-template-rows: repeat(3, 1fr);
-      row-gap: 10%;
+      display: flex;
+      flex-flow: column wrap;
       margin: 5%;
-      grid-template-columns: auto;
     }
   }
 
@@ -288,6 +288,7 @@ $header-neg-space: -1.375em;
     text-align: left;
     font-weight: normal;
     padding: 1rem;
+    margin-bottom: 5%;
 
     .card-descrip {
       margin-left: 60px;
@@ -306,7 +307,6 @@ $header-neg-space: -1.375em;
     .card-stripe {
       position: absolute;
       width: 50px;
-      padding-bottom: 100%;
       top: 0;
       left: 0;
       bottom: 0;
