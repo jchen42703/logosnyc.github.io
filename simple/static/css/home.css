@@ -281,6 +281,8 @@ a.button1 {
         margin: 0; }
       .h-overlap-container .img-card .four-buttons {
         justify-content: center; }
+  .card-grid-container .header {
+    margin-left: 5%; }
   .card-grid-container .grid {
     grid-template-rows: repeat(3, 1fr);
     row-gap: 15vh;

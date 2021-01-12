@@ -303,13 +303,14 @@
   }
 
   .card-grid-container {
+    .header {
+      margin-left: 5%;
+    }
     .grid {
       grid-template-rows: repeat(3, 1fr);
       row-gap: 15vh;
       margin: 5%;
       grid-template-columns: auto;
-      // column-gap: 10vw;
-      // margin: 10vh 5vw 5vh 15%;
     }
   }
 }
