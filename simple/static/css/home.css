@@ -258,6 +258,9 @@ a.button1 {
   position: relative;
   width: 100%;
   min-height: 45vh; }
+  @media (max-width: 768px) {
+    .card-grid-container {
+      text-align: center; } }
   .card-grid-container .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -272,11 +275,12 @@ a.button1 {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     color: #655c56;
     text-align: left;
     font-weight: normal;
     padding: 1rem;
-    margin-bottom: 5%; }
+    margin-bottom: 10%; }
     .card-grid-container .card .card-descrip {
       margin-left: 60px; }
       .card-grid-container .card .card-descrip h2 {
@@ -303,7 +307,8 @@ a.button1 {
     margin-left: 15%; }
     @media (max-width: 768px) {
       .card-grid-container .header {
-        margin-left: 5%; } }
+        margin-left: 0;
+        margin-right: 0; } }
   .card-grid-container .green {
     background-color: #94d3ac; }
   .card-grid-container .dark-grey {

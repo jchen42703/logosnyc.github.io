@@ -267,6 +267,9 @@ $header-neg-space: -1.375em;
   position: relative;
   width: 100%;
   min-height: 45vh;
+  @include media("<=tablet") {
+    text-align: center;
+  }
 
   .grid {
     display: grid;
@@ -284,11 +287,12 @@ $header-neg-space: -1.375em;
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     color: $dark-grey;
     text-align: left;
     font-weight: normal;
     padding: 1rem;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 
     .card-descrip {
       margin-left: 60px;
@@ -326,7 +330,8 @@ $header-neg-space: -1.375em;
     color: $white;
     margin-left: 15%;
     @include media("<=tablet") {
-      margin-left: 5%;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
