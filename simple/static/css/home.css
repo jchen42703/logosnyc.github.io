@@ -195,13 +195,27 @@ a.button1 {
     text-align: left;
     font-weight: normal;
     padding: 1rem; }
-  .card-grid-container .card-stripe {
-    position: absolute;
-    width: 50px;
-    padding-bottom: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0; }
+    .card-grid-container .card .card-descrip {
+      margin-left: 60px; }
+      .card-grid-container .card .card-descrip h2 {
+        font-size: 1.875em;
+        color: #94d3ac; }
+      .card-grid-container .card .card-descrip span {
+        font-size: 0.938em;
+        color: #655c56; }
+    .card-grid-container .card .card-stripe {
+      position: absolute;
+      width: 50px;
+      padding-bottom: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0; }
+    .card-grid-container .card img {
+      position: relative;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      z-index: 1; }
   .card-grid-container .header {
     background-color: #655c56;
     color: #effcef;
@@ -266,4 +280,9 @@ a.button1 {
       .h-overlap-container .img-card p {
         margin: 0; }
       .h-overlap-container .img-card .four-buttons {
-        justify-content: center; } }
+        justify-content: center; }
+  .card-grid-container .grid {
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 15vh;
+    margin: 5%;
+    grid-template-columns: auto; } }
