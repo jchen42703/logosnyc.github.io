@@ -180,7 +180,6 @@ $header-neg-space: -1.375em;
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 13;
-
     @include media("<=tablet") {
       width: 70%;
       padding: 0;
@@ -258,12 +257,14 @@ $header-neg-space: -1.375em;
 // img-card to the right of the image
 .h-overlap-container-r {
   @extend .h-overlap-container-l;
+
   img {
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 13;
   }
+
   .img-card {
     grid-column-start: 6;
     grid-column-end: 13;
