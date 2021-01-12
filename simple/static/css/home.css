@@ -46,14 +46,11 @@ a.button1 {
   background-attachment: fixed; }
 
 .hero-image-welcome {
-  /* width: 100vw; */
   width: 100%;
   height: 80vh;
-  /* Flexbox stuff */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Text styles */
   text-align: center; }
   .hero-image-welcome .hero-text {
     display: inline-block;
@@ -62,14 +59,14 @@ a.button1 {
     margin: 0% 25vw; }
     .hero-image-welcome .hero-text .hero-header {
       margin-bottom: 5vh; }
-    .hero-image-welcome .hero-text span {
-      font-size: 55px;
-      font-weight: bold;
-      margin-bottom: 10vh;
-      transition: color 0.3s ease-out; }
-    .hero-image-welcome .hero-text hr {
-      margin: 0% 2vw 2vh 2vw;
-      border: 2px solid #effcef; }
+      .hero-image-welcome .hero-text .hero-header span {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 10vh;
+        transition: color 0.3s ease-out; }
+      .hero-image-welcome .hero-text .hero-header hr {
+        margin: 0% 2vw 2vh 2vw;
+        border: 2px solid #effcef; }
 
 .header {
   display: inline-block !important;
@@ -174,7 +171,6 @@ a.button1 {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      position: relative;
       margin: 0 5%;
       text-align: center;
       width: 100%; } }
@@ -185,7 +181,6 @@ a.button1 {
     width: 70vw; }
     @media (max-width: 768px) {
       .h-overlap-container img {
-        position: relative;
         width: 100%;
         padding: 0;
         margin: 0; } }
@@ -205,7 +200,6 @@ a.button1 {
         background-color: transparent;
         color: #655c56;
         width: 100%;
-        z-index: inherit;
         padding: 0;
         left: 0;
         top: 0; } }
@@ -226,10 +220,9 @@ a.button1 {
       background: #94d3ac; }
       @media (max-width: 768px) {
         .h-overlap-container .img-card .header {
-          color: #effcef;
           background: #655c56;
-          margin: 0;
-          position: relative; } }
+          position: relative;
+          margin: 0; } }
   .h-overlap-container p {
     margin-left: 5vw; }
     @media (max-width: 768px) {
