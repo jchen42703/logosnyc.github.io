@@ -214,11 +214,13 @@ $header-neg-space: -1.375em;
       font-size: $content-size;
       max-width: 550px;
       margin-top: 4vh;
+      margin-left: 5%;
       @include media("<=tablet") {
         position: relative;
         padding: 0;
         text-align: center;
         margin-right: 0;
+        margin-left: 0;
       }
     }
 
@@ -233,13 +235,6 @@ $header-neg-space: -1.375em;
     }
   }
 
-  p {
-    margin-left: 5vw;
-    @include media("<=tablet") {
-      margin: 0;
-    }
-  }
-
   .four-buttons {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -247,7 +242,6 @@ $header-neg-space: -1.375em;
     row-gap: 4vh;
     column-gap: 2vw;
     position: relative;
-    margin: 5vh 5vw;
     @include media("<=tablet") {
       justify-content: center;
     }
