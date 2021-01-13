@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import "./_colors";
 
 * {
   margin: 0;
@@ -23,7 +24,7 @@ html {
 #hero-heading {
   font-size: 7rem;
   font-family: "Ubuntu", sans-serif;
-  color:white;
+  color: $white;
 }
 
 .btn-hero {
@@ -32,7 +33,7 @@ html {
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
-  color: white;
+  color: $white;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -77,180 +78,98 @@ html {
   }
 }
 
-.logos-church{
-  text-align: center;
-  height: 50vh;
-}
-
-.logos-church h1{
-  margin-top: 160px;
-  font-size: 36px;
-  color: #898989;
-  margin-bottom: 5rem;
-
-}
-
-.logos-church p{
-  font-size: 18px;
-  color: black;
-  width: 800px;
-  margin-left: 550px;
-  
-}
-
-
-h1{
-  color:black;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-h2{
-  color:#777;
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-
-p{
-  font-size: 1.5rem;
-  color:black;
-  line-height: 5rem;
-  margin-bottom: 2.5rem;
-}
-
-
-
 .mission{
   text-align: center;
-}
-
-.mission h1{
-  font-size: 36px;
-  color: #898989;
-
-}
-
-.mission p{
-  font-size: 18px;
-  color: black;
-  
-}
-
-.vision{
-  text-align: center;
-  height: 40vh;
-  
-  
-}
-
-.vision h1{
-  margin-top: 5rem;
-  font-size: 36px;
-  color: #898989;
-  margin-bottom: 5rem;
-
-}
-
-.vision p{
-  font-size: 18px;
-  color: black;
-  
-}
-
-
-.our-staff-container {
-  background-color: #94D3AC;
-}
-
-.heading {
-  font-size: 60px;
-  color: black;
-  text-align:center;
-}
-
-.heading span {
-  font-style: italic;
-  font-size: 30px;
-}
-
-.profiles {
-  display: flex;
-  justify-content: space-around;
-}
-
-.profile {
-  flex-basis: 260px;
-}
-
-.profile .profile-img {
-  height: 260px;
-  width: 260px;
-  border-radius: 50%;
-  filter: grayscale(100%);
-  cursor: pointer;
-  transition: 400ms;
-}
-
-.profile:hover .profile-img {
-  filter: grayscale(0);
-}
-
-.user-name {
-  margin-top: 30px;
-  font-size: 35px;
-}
-
-.profile h5 {
-  font-size: 18px;
-  font-weight: 100;
-  letter-spacing: 3px;
-
-}
-
-.profile p {
-  font-size: 16px;
-  margin-top: 20px;
-  text-align: justify;
-  width: 50vh;
-  font-family: "Ubuntu", sans-serif;
-}
-
-@media only screen and (max-width: 1150px) {
-  .profiles {
-    flex-direction: column;
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile p {
-    text-align: center;
-    margin: 20px 60px 80px 60px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .heading {
+  h1{
+    letter-spacing: 5px;
+    color: $dark-grey;
+    margin-top: 5rem;
     font-size: 40px;
-    color: white;
-    text-align: center;
   }
 
-  .heading span {
-    font-size: 15px;
+  p{
+    margin-top: 18px;
+    margin-bottom: 9px;
+    font-size: 18px;
+  }
+}
+
+.our-staff-header{
+  text-align: center;
+  margin-bottom: 10rem;
+
+  h1{
+    letter-spacing: 5px;
+    color: $dark-grey;
+    margin-top: 5rem;
+    font-size: 40px;
   }
 
-  .profiles {
-    margin: 20px 0;
+  p{
+    font-size:18px;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
   }
 
-  .profile p {
-    margin: 20px 10px 80px 10px;
+  
+}
+
+.staff-container{
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+  background-color: $light-green;
+  letter-spacing: 2px;
+
+  h1{
+    font-size: 30px;
+    font-weight: 400;
   }
+
+  h2{
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 1.5rem;
+    font-weight: 200;
+  }
+
+  
+}
+
+.our-staff{
+  display: block;
+  height: 55vh;
+ 
+
+}
+
+.staff-img{
+  margin-top: -13em;
+  padding-left: 450px;
+  padding-right: 18px;
+  float: left;
+  
+  
+}
+
+.our-staff-description{
+  padding-top: 50px;
+  padding-right: 400px;
+  padding-left: 950px;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+
+  
+}
+
+#pastor-mary-h1{
+
+  margin-left: 70px;
+  margin-top: 1.5rem;
+}
+
+#pastor-mary-h2{
+  margin-right: 150px;
+  margin-top: 1.5rem;
 }
