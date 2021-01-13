@@ -5,6 +5,15 @@
   font-family: "Ubuntu", sans-serif;
   line-height: 1.7; }
 
+.icon-link {
+  color: #effcef; }
+  .icon-link a {
+    font-size: 1em;
+    color: inherit;
+    text-decoration: none; }
+    .icon-link a:hover {
+      color: #94d3ac; }
+
 .padding-small {
   padding: 5vh 0vw;
   background-color: #effcef; }
