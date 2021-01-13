@@ -101,11 +101,12 @@ a.button1 {
   grid-column-gap: 1vw; }
   @media (max-width: 768px) {
     .two-columns {
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: auto;
-      grid-row-gap: 0;
-      grid-column-gap: 0; } }
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 0; } }
 
 .service {
   color: #effcef;
@@ -113,7 +114,8 @@ a.button1 {
   @media (max-width: 768px) {
     .service {
       max-width: 100vw;
-      margin-left: 1vw !important; } }
+      margin-left: 1vw !important;
+      margin-bottom: 5vh; } }
   .service img {
     vertical-align: middle;
     border: 0;
@@ -251,19 +253,29 @@ a.button1 {
     position: relative; }
     @media (max-width: 768px) {
       .h-overlap-container-l .four-buttons, .h-overlap-container-r .four-buttons {
-        justify-content: center; } }
+        justify-content: center;
+        margin: 0 5% 5% 5%; } }
 
 .h-overlap-container-r img {
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 13; }
+  @media (max-width: 768px) {
+    .h-overlap-container-r img {
+      margin-bottom: 5%; } }
 
 .h-overlap-container-r .img-card {
   grid-column-start: 6;
   grid-column-end: 13;
   grid-row-start: 3;
   grid-row-end: 11; }
+  .h-overlap-container-r .img-card .content {
+    margin-right: 5%;
+    margin-left: 5%; }
+  @media (max-width: 768px) {
+    .h-overlap-container-r .img-card .header {
+      margin: 0 10%; } }
 
 .container-header-neg {
   width: 100%;
