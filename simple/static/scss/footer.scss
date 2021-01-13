@@ -1,11 +1,16 @@
 @import "./_colors";
 @import "./_general";
+@import "_include-media";
 
 .contact-container {
   background-color: $dark-grey;
   color: $white;
   padding: 5% 15%;
   text-align: center;
+  @include media("<=tablet") {
+    padding: 5vh 15vw 10vh 15vw;
+  }
+
   .info {
     display: grid;
     justify-content: center;
@@ -13,21 +18,19 @@
     row-gap: 10%;
     margin-top: 1%;
   }
+
   a {
     font-size: 16px;
     color: inherit;
     text-decoration: none;
+
     &:hover {
       color: $green;
     }
   }
+
   hr {
     margin: 2vh 25vw;
     border: 2px solid $white;
-  }
-}
-@media only screen and (max-width: 720px) {
-  .contact-container {
-    padding: 5vh 15vw 10vh 15vw;
   }
 }
