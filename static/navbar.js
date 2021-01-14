@@ -18,11 +18,9 @@ function toggleDrop() {
   }
 }
 
-// tablet -> 768px (in _general.scss)
-if (document.documentElement.clientWidth < 768) {
-  for (let item of items) {
-    if (item.querySelector(".drop")) {
-      item.addEventListener("click", toggleDrop, false);
-    }
+// makes the nav-item clickable to bring down the drop-down menu
+for (let item of items) {
+  if (item.querySelector(".drop")) {
+    item.addEventListener("click", toggleDrop, false);
   }
 }
