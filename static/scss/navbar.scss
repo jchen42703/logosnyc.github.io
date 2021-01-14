@@ -1,90 +1,146 @@
-/* BASIC SETUP */
 @import "./_colors";
 @import "./_general";
+@import "./fontFormatting";
+@import "./include-media";
 
-.page-wrapper {
-  width: 100%;
-  height: auto;
+@mixin transform($value) {
+  -webkit-transform: ($value);
+  -moz-transform: ($value);
+  -ms-transform: ($value);
+  transform: ($value);
+}
+@mixin transition($value) {
+  -webkit-transition: ($value);
+  -moz-transition: ($value);
+  -ms-transition: ($value);
+  transition: ($value);
 }
 
-.nav-wrapper {
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 10vh;
   width: 100%;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  min-height: 96px;
   top: 0;
+  // padding-top: 3vh;
 
-  .transparent {
-    background-color: transparent;
+  .logo {
+    height: 65%;
+    width: auto;
+    justify-self: start;
+    vertical-align: center;
+    margin-left: 7vw;
+    cursor: pointer;
 
-    .nav-item a {
-      color: $white;
+    img {
+      height: 100%;
     }
   }
 
-  .vanilla {
-    background-color: $white;
-
-    .nav-item a {
-      color: $dark-grey;
-    }
-  }
-
-  /* NAVIGATION */
-
-  .navbar {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    height: 10vh;
-    min-height: 96px;
-    overflow: hidden;
-
-    // logo
-    a {
-      height: 65%;
-      width: auto;
-      justify-self: start;
-      margin-left: 7vw;
-
-      img {
-        height: 100%;
-      }
-    }
-
-    ul {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      min-width: 50vw;
-      grid-gap: 1.5vw;
-      justify-self: end;
-      margin-right: 5vw;
-    }
-  }
-
-  .nav-item {
+  .nav-links-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
 
-    a {
-      font-size: 16px;
-      font-weight: 700;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: color 0.3s ease-out;
-      opacity: 95%;
+    .nav-item {
+      display: inline-block;
+      position: relative;
 
-      /** Underline Animation */
-      &:after {
-        display: block;
-        content: "";
-        border-bottom: solid 3px $green;
-        transform: scaleX(0);
-        transition: transform 250ms ease-in-out;
+      a,
+      span {
+        display: inline;
+        position: relative;
+        font-size: $content-size;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.3s ease-out;
+        opacity: 95%;
+
+        /** Underline Animation */
+        &:after {
+          display: block;
+          content: "";
+          border-bottom: solid 3px $green;
+          transform: scaleX(0);
+          transition: transform 250ms ease-in-out;
+        }
+
+        &:hover:after {
+          transform: scaleX(1);
+        }
       }
 
-      &:hover:after {
-        transform: scaleX(1);
+      .drop {
+        overflow: hidden;
+        list-style: none;
+        position: absolute;
+        text-align: left;
+        width: 200%;
+        left: 0;
+        top: 48px;
+
+        ul {
+          min-width: none;
+          margin: 0;
+        }
+        .drop-items {
+          @include media(">tablet") {
+            @include transform(translate(0, -100%));
+            @include transition(all 0.5s 0.1s);
+          }
+          position: relative;
+          a,
+          span {
+            font-size: $content-size - 0.15em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $dark-grey;
+            padding-left: 1em;
+          }
+        }
+
+        li {
+          display: block;
+          position: relative;
+          padding: 0;
+          width: 100%;
+          background: $white;
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+}
+
+.transparent {
+  background-color: transparent;
+  .nav-item a,
+  span {
+    color: $white;
+  }
+}
+
+.vanilla {
+  background-color: $white;
+
+  .nav-item a,
+  span {
+    color: $dark-grey;
+  }
+}
+
+// Dropdown animation
+@include media(">tablet") {
+  @for $i from 1 through 4 {
+    .nav-links-container li:nth-child(#{$i}) {
+      &:hover .drop .drop-items {
+        @include transform(translate(0, 0));
       }
     }
   }
@@ -142,8 +198,8 @@
 @media only screen and (max-width: map-get($breakpoints, "tablet")) {
   /* MOBILE NAVIGATION */
 
-  .nav-wrapper .navbar {
-    ul {
+  .navbar {
+    .nav-links-container {
       margin: 0;
       display: flex;
       flex-direction: column;
@@ -156,6 +212,36 @@
       transform: translate(-101%);
       text-align: center;
       overflow: hidden;
+      .nav-item {
+        span {
+          cursor: pointer;
+        }
+
+        .drop {
+          display: none;
+          position: relative;
+          text-align: center;
+          width: 100%;
+          top: 0;
+          padding: 0;
+          margin: 0;
+          li {
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+          .drop-items a {
+            padding: 0;
+          }
+        }
+      }
+      .drop-active {
+        border-radius: 0;
+
+        .drop {
+          display: inline;
+        }
+      }
     }
 
     li {
