@@ -45,6 +45,53 @@ a.button1 {
     color: #94d3ac;
     background-color: transparent; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.7; }
+
+.icon-link {
+  color: #effcef; }
+  .icon-link a {
+    font-size: 1em;
+    color: inherit;
+    text-decoration: none; }
+    .icon-link a:hover {
+      color: #94d3ac; }
+
+.padding-small {
+  padding: 5vh 0vw;
+  background-color: #effcef; }
+
+.padding-large {
+  padding: 15vh 0vw;
+  background-color: #effcef; }
+
+hr {
+  margin: 5vh 15vw;
+  border: 2px solid #655c56; }
+
+a.button1 {
+  color: #effcef;
+  background-color: #94d3ac;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer !important;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.15em solid #94d3ac;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s; }
+  a.button1:hover {
+    color: #94d3ac;
+    background-color: transparent; }
+
 /* hero */
 .hero-bg {
   /* Background styles */
@@ -342,3 +389,61 @@ a.button1 {
     background-color: #94d3ac; }
   .card-grid-container .dark-grey {
     background-color: #655c56; }
+
+.link-d, .link-l {
+  cursor: pointer;
+  color: #5dba81;
+  text-decoration: none; }
+
+.link-l {
+  color: #94d3ac; }
+
+.info-container-l, .info-container-d {
+  text-align: center;
+  background-color: #effcef;
+  color: #655c56;
+  padding-top: 10vh;
+  padding-bottom: 10vh; }
+  .info-container-l p, .info-container-d p {
+    font-size: 1.15em; }
+  .info-container-l .info-only, .info-container-d .info-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 15%; }
+  .info-container-l .info-img-container, .info-container-d .info-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 3% 15%; }
+    .info-container-l .info-img-container img, .info-container-d .info-img-container img {
+      width: 80%;
+      margin: 0 auto; }
+  .info-container-l .header, .info-container-d .header {
+    position: relative;
+    background-color: #655c56;
+    color: #effcef;
+    margin: 0; }
+
+.info-container-d {
+  background-color: #655c56;
+  color: #effcef; }
+  .info-container-d .header {
+    background-color: #94d3ac;
+    color: #effcef; }
+
+table {
+  border-collapse: collapse; }
+  table thead tr {
+    background-color: #655c56;
+    color: #effcef; }
+  table td,
+  table th {
+    text-align: left;
+    padding: 15px; }
+  table tbody tr:nth-child(even) {
+    background-color: #ccedd2; }
+  table tbody tr:nth-child(odd) {
+    background-color: #f6f7f5; }
+  table tbody th {
+    font-weight: normal; }

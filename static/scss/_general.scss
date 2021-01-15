@@ -16,6 +16,9 @@ $breakpoints: (
   // where the contents container stretches beyond the image
 ) !default;
 
+$smallPadding-v: 10vh;
+$largePadding-v: 30vh;
+
 .icon-link {
   color: $white;
   a {
@@ -28,13 +31,14 @@ $breakpoints: (
     }
   }
 }
+
 .padding-small {
-  padding: 5vh 0vw;
+  padding: ($smallPadding-v/2) 0vw;
   background-color: $white;
 }
 
 .padding-large {
-  padding: 15vh 0vw;
+  padding: ($largePadding-v/2) 0vw;
   background-color: $white;
 }
 

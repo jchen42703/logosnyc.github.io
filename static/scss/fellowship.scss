@@ -1,0 +1,95 @@
+@import "./_colors";
+@import "./_general";
+@import "./fontFormatting";
+@import "_include-media";
+@import "./home.scss";
+
+.link-d {
+  cursor: pointer;
+  color: $dark-green;
+  text-decoration: none;
+}
+
+.link-l {
+  @extend .link-d;
+  color: $green;
+}
+
+.info-container-l {
+  text-align: center;
+  background-color: $white;
+  color: $dark-grey;
+  padding-top: $smallPadding-v;
+  padding-bottom: $smallPadding-v;
+
+  p {
+    font-size: $content-size;
+  }
+
+  .info-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 15%;
+  }
+
+  .info-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 3% 15%;
+
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .header {
+    position: relative;
+    background-color: $dark-grey;
+    color: $white;
+    margin: 0;
+  }
+}
+
+.info-container-d {
+  @extend .info-container-l;
+  background-color: $dark-grey;
+  color: $white;
+
+  .header {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+table {
+  border-collapse: collapse;
+
+  thead tr {
+    background-color: $dark-grey;
+    color: $white;
+  }
+
+  td,
+  th {
+    text-align: left;
+    padding: 15px;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: $light-green;
+    }
+
+    tr:nth-child(odd) {
+      background-color: $grey;
+    }
+
+    th {
+      // border: $table-border;
+      font-weight: normal;
+    }
+  }
+}
