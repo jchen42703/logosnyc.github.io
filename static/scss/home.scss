@@ -51,7 +51,7 @@ $header-neg-space: -1.375em;
 .header {
   display: inline-block !important;
   color: $white;
-  background: $dark-grey;
+  background-color: $dark-grey;
   padding: 10px 16px;
   margin-top: $header-neg-space;
   margin-bottom: 0.5rem;
@@ -62,7 +62,7 @@ $header-neg-space: -1.375em;
 }
 
 .two-columns {
-  background: $white;
+  background-color: $white;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,7 +101,7 @@ $header-neg-space: -1.375em;
   }
 
   .wrapper {
-    background: $dark-grey;
+    background-color: $dark-grey;
     margin-left: 3.5em;
     margin-top: -6em;
     margin-right: 1em;
@@ -118,7 +118,7 @@ $header-neg-space: -1.375em;
   }
 
   .header {
-    background: $green;
+    background-color: $green;
     color: $white;
   }
 
@@ -228,9 +228,9 @@ $header-neg-space: -1.375em;
 
     .header {
       color: $white;
-      background: $green;
+      background-color: $green;
       @include media("<=tablet") {
-        background: $dark-grey;
+        background-color: $dark-grey;
         position: relative;
         margin: 0;
       }
