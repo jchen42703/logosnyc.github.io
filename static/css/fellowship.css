@@ -99,7 +99,8 @@ a.button1 {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .hero-image-welcome {
   width: 100%;
@@ -403,9 +404,13 @@ a.button1 {
   background-color: #effcef;
   color: #655c56;
   padding-top: 10vh;
-  padding-bottom: 10vh; }
+  padding-bottom: 10vh;
+  width: 100%; }
   .info-container-l p, .info-container-d p {
     font-size: 1.15em; }
+    @media (max-width: 411px) {
+      .info-container-l p, .info-container-d p {
+        font-size: 1em; } }
   .info-container-l .info-only, .info-container-d .info-only {
     display: flex;
     justify-content: center;
@@ -419,7 +424,7 @@ a.button1 {
     @media (max-width: 768px) {
       .info-container-l .info-img-container, .info-container-d .info-img-container {
         display: flex;
-        flex-flow: column wrap; } }
+        flex-flow: column; } }
     .info-container-l .info-img-container img, .info-container-d .info-img-container img {
       width: 80%;
       margin: 0 auto; }

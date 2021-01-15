@@ -23,9 +23,13 @@ $top-spacing: 5%;
   color: $dark-grey;
   padding-top: $smallPadding-v;
   padding-bottom: $smallPadding-v;
+  width: 100%;
 
   p {
     font-size: $content-size;
+    @include media("<=phone") {
+      font-size: $phone-content-size;
+    }
   }
 
   .info-only {
@@ -43,7 +47,7 @@ $top-spacing: 5%;
 
     @include media("<=tablet") {
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: column;
     }
 
     img {
