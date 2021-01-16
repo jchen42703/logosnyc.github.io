@@ -56,9 +56,13 @@ a.button1 {
   .contact-container .info {
     display: grid;
     justify-content: center;
-    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    grid-template-rows: repeat(5, 1fr);
     row-gap: 10%;
     margin-top: 1%; }
+    @media (max-width: 768px) {
+      .contact-container .info {
+        row-gap: 1%; } }
   .contact-container a {
     font-size: 16px;
     color: inherit;
