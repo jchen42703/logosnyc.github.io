@@ -391,13 +391,16 @@ a.button1 {
   .card-grid-container .dark-grey {
     background-color: #655c56; }
 
-.link-d, .link-l {
+.link-d, .link-l, .link-grey {
   cursor: pointer;
   color: #5dba81;
   text-decoration: none; }
 
 .link-l {
   color: #94d3ac; }
+
+.link-grey {
+  color: #655c56; }
 
 .info-container-l, .info-container-d {
   text-align: center;
