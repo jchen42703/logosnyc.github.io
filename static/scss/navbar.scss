@@ -1,0 +1,270 @@
+@import "./_colors";
+@import "./_general";
+@import "./fontFormatting";
+@import "./include-media";
+
+@mixin transform($value) {
+  -webkit-transform: ($value);
+  -moz-transform: ($value);
+  -ms-transform: ($value);
+  transform: ($value);
+}
+@mixin transition($value) {
+  -webkit-transition: ($value);
+  -moz-transition: ($value);
+  -ms-transition: ($value);
+  transition: ($value);
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  min-height: 96px;
+  top: 0;
+  // padding-top: 3vh;
+
+  .logo {
+    height: 65%;
+    width: auto;
+    justify-self: start;
+    vertical-align: center;
+    margin-left: 7vw;
+    cursor: pointer;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .nav-links-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+
+    .nav-item {
+      display: inline-block;
+      position: relative;
+
+      a,
+      span {
+        display: inline;
+        position: relative;
+        font-size: $content-size;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.3s ease-out;
+        opacity: 95%;
+
+        /** Underline Animation */
+        &:after {
+          display: block;
+          content: "";
+          border-bottom: solid 3px $green;
+          transform: scaleX(0);
+          transition: transform 250ms ease-in-out;
+        }
+
+        &:hover:after {
+          transform: scaleX(1);
+        }
+      }
+
+      .drop {
+        overflow: hidden;
+        list-style: none;
+        position: absolute;
+        text-align: left;
+        width: 200%;
+        left: 0;
+        top: 48px;
+
+        ul {
+          min-width: none;
+          margin: 0;
+        }
+        .drop-items {
+          @include media(">tablet") {
+            @include transform(translate(0, -100%));
+            @include transition(all 0.5s 0.1s);
+          }
+          position: relative;
+          a,
+          span {
+            font-size: $content-size - 0.15em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $dark-grey;
+            padding-left: 1em;
+          }
+        }
+
+        li {
+          display: block;
+          position: relative;
+          padding: 0;
+          width: 100%;
+          background: $white;
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+}
+
+.transparent {
+  background-color: transparent;
+  .nav-item a,
+  span {
+    color: $white;
+  }
+}
+
+.vanilla {
+  background-color: $white;
+
+  .nav-item a,
+  span {
+    color: $dark-grey;
+  }
+}
+
+// Dropdown animation
+@include media(">tablet") {
+  @for $i from 1 through 4 {
+    .nav-links-container li:nth-child(#{$i}) {
+      &:hover .drop .drop-items {
+        @include transform(translate(0, 0));
+      }
+    }
+  }
+}
+
+/* MOBILE MENU & ANIMATION */
+
+.menu-toggle {
+  justify-self: end;
+  margin-right: 25px;
+  display: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .white {
+    background-color: $white;
+  }
+
+  .dark-grey {
+    background-color: $dark-grey;
+  }
+}
+
+#mobile-menu.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: map-get($breakpoints, "tablet")) {
+  /* MOBILE NAVIGATION */
+
+  .navbar {
+    .nav-links-container {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      justify-content: start;
+      top: 65px;
+      background-color: $dark-grey;
+      width: 100%;
+      height: calc(100vh - 55px);
+      transform: translate(-101%);
+      text-align: center;
+      overflow: hidden;
+      .nav-item {
+        span {
+          cursor: pointer;
+        }
+
+        .drop {
+          display: none;
+          position: relative;
+          text-align: center;
+          width: 100%;
+          top: 0;
+          padding: 0;
+          margin: 0;
+          li {
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+          .drop-items a {
+            padding: 0;
+          }
+        }
+      }
+      .drop-active {
+        border-radius: 0;
+
+        .drop {
+          display: inline;
+        }
+      }
+    }
+
+    li {
+      padding: 15px;
+
+      &:first-child {
+        margin-top: 50px;
+      }
+
+      a {
+        color: $white;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .menu-toggle,
+  .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    transform: translate(0%) !important;
+  }
+}

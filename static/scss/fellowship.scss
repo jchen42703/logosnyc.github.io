@@ -1,0 +1,117 @@
+@import "./_colors";
+@import "./_general";
+@import "./fontFormatting";
+@import "_include-media";
+@import "./home.scss";
+
+.link-d {
+  cursor: pointer;
+  color: $dark-green;
+  text-decoration: none;
+}
+
+.link-l {
+  @extend .link-d;
+  color: $green;
+}
+
+$top-spacing: 5%;
+
+.info-container-l {
+  text-align: center;
+  background-color: $white;
+  color: $dark-grey;
+  padding-top: $smallPadding-v;
+  padding-bottom: $smallPadding-v;
+  width: 100%;
+
+  p {
+    font-size: $content-size;
+    @include media("<=phone") {
+      font-size: $phone-content-size;
+    }
+  }
+
+  .info-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $top-spacing 15%;
+  }
+
+  .info-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: $top-spacing 15%;
+
+    @include media("<=tablet") {
+      display: flex;
+      flex-flow: column;
+    }
+
+    img {
+      width: 80%;
+      margin: 0 auto;
+      @include media("<=tablet") {
+        margin: $top-spacing auto;
+      }
+    }
+  }
+
+  .header {
+    position: relative;
+    background-color: $dark-grey;
+    color: $white;
+    margin: 0;
+  }
+}
+
+.info-container-d {
+  @extend .info-container-l;
+  background-color: $dark-grey;
+  color: $white;
+
+  .info-img-container {
+    img {
+      @include media("<=tablet") {
+        margin: 0 auto $top-spacing auto;
+      }
+    }
+  }
+
+  .header {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+table {
+  border-collapse: collapse;
+
+  thead tr {
+    background-color: $dark-grey;
+    color: $white;
+  }
+
+  td,
+  th {
+    text-align: left;
+    padding: 15px;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: $light-green;
+    }
+
+    tr:nth-child(odd) {
+      background-color: $grey;
+    }
+
+    th {
+      // border: $table-border;
+      font-weight: normal;
+    }
+  }
+}

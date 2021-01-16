@@ -18,27 +18,42 @@
 
   <body>
     <div class="hero-bg">
-      <div class="page-wrapper">
-        <div class="nav-wrapper">
-          <nav class="navbar transparent">
-            <a href="./index.html"
-              ><img src="./media/logo_w_long_fixed.svg" alt="Logo"
-            /></a>
-            <div class="menu-toggle" id="mobile-menu">
-              <span class="bar white"></span>
-              <span class="bar white"></span>
-              <span class="bar white"></span>
-            </div>
-            <ul class="nav">
-              <li class="nav-item"><a href="pages/about.html">About</a></li>
-              <li class="nav-item"><a href="pages/events.html">Events</a></li>
-              <li class="nav-item"><a href="pages/connect.html">Connect</a></li>
-              <li class="nav-item"><a href="pages/sermons.html">Sermons</a></li>
-              <li class="nav-item"><a href="pages/giving.html">Giving</a></li>
-            </ul>
-          </nav>
+      <nav class="navbar transparent">
+        <a href="./index.html" class="logo"
+          ><img src="./media/logo_w_long_fixed.svg" alt="Logo"
+        /></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar white"></span>
+          <span class="bar white"></span>
+          <span class="bar white"></span>
         </div>
-      </div>
+        <ul class="nav-links-container">
+          <!-- intentionally placed here for spacing -->
+          <li></li>
+          <li class="nav-item"><a href="pages/about.html">About</a></li>
+          <li class="nav-item"><a href="pages/events.html">Events</a></li>
+          <li class="nav-item">
+            <span>Connect <i class="fas fa-caret-down"></i></span>
+            <ul class="drop">
+              <div class="drop-items">
+                <li><a href="pages/connect.html">Basketball</a></li>
+                <li><a href="pages/connect.html">Discipleship</a></li>
+                <li><a href="pages/fellowship.html">Fellowship</a></li>
+                <li><a href="pages/connect.html">Prayer</a></li>
+                <li><a href="pages/connect.html">Usher</a></li>
+                <li><a href="pages/connect.html">Worship Team</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.youtube.com/channel/UCW09TfSO4PARzKV5_Ty9B6w/videos"
+              >Sermons</a
+            >
+          </li>
+          <li class="nav-item"><a href="pages/giving.html">Giving</a></li>
+        </ul>
+      </nav>
 
       <script src="static/navbar.js"></script>
 
@@ -149,10 +164,10 @@
             </p>
             <br />
             <div class="four-buttons">
-              <a href="pages/fellowship.html" class="button1">YOUTH</a>
-              <a href="pages/fellowship.html" class="button1">COLLEGE</a>
-              <a href="pages/fellowship.html" class="button1">CAREER</a>
-              <a href="pages/fellowship.html" class="button1">FAMILY</a>
+              <a href="pages/fellowship.html#youth" class="button1">YOUTH</a>
+              <a href="pages/fellowship.html#college" class="button1">COLLEGE</a>
+              <a href="pages/fellowship.html#career" class="button1">CAREER</a>
+              <a href="pages/fellowship.html#family" class="button1">FAMILY</a>
             </div>
           </div>
         </div>
@@ -266,10 +281,9 @@
           </div>
           <div>
             <span>
-              <a href="facebook.com/logosny.em"
-                ><i class="fab fa-facebook-square"></i>
-                facebook.com/logosny.em</a
-              >
+              <a href="https://facebook.com/logosny.em">
+                <i class="fab fa-facebook-square"></i> facebook.com/logosny.em
+              </a>
             </span>
           </div>
         </div>
