@@ -15,6 +15,11 @@
   color: $green;
 }
 
+.link-grey {
+  @extend .link-d;
+  color: $dark-grey;
+}
+
 $top-spacing: 5%;
 
 .info-container-l {
