@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import "./_colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+}
+
+html {
+  font-size: 10px;
+}
+
+#hero-heading {
+  font-size: 7rem;
+  font-family: "Ubuntu", sans-serif;
+  color: $white;
+}
+
+.btn-hero {
+  display: inline-block;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: $white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+
+
+.img-container {
+  background-image: url("../../media/logos-church.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.inner-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 300px;
+}
+
+@media only screen and (max-width: 920px) {
+  .inner-container {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .inner-container {
+    margin-top: 150px;
+  }
+  #hero-heading {
+    font-size: 5em;
+  }
+  #img-heading {
+    font-size: 1.4em;
+  }
+}
+
+.mission{
+  text-align: center;
+  h1{
+    letter-spacing: 5px;
+    color: $dark-grey;
+    margin-top: 5rem;
+    font-size: 40px;
+  }
+
+  p{
+    margin-top: 18px;
+    margin-bottom: 9px;
+    font-size: 18px;
+  }
+}
+
+.our-staff-header{
+  text-align: center;
+  margin-bottom: 10rem;
+
+  h1{
+    letter-spacing: 5px;
+    color: $dark-grey;
+    margin-top: 5rem;
+    font-size: 40px;
+  }
+
+  p{
+    font-size:18px;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  
+}
+
+.staff-container{
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+  background-color: $light-green;
+  letter-spacing: 2px;
+
+  h1{
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  h2{
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 1.5rem;
+    font-weight: 200;
+  }
+
+  
+}
+
+.our-staff{
+  display: block;
+  height: 55vh;
+ 
+
+}
+
+.staff-img{
+  margin-top: -13em;
+  padding-left: 450px;
+  padding-right: 18px;
+  float: left;
+  
+  
+}
+
+.our-staff-description{
+  padding-top: 50px;
+  padding-right: 400px;
+  padding-left: 950px;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+
+  
+}
+
+#pastor-mary-h1{
+
+  margin-left: 70px;
+  margin-top: 1.5rem;
+}
+
+#pastor-mary-h2{
+  margin-right: 150px;
+  margin-top: 1.5rem;
+}
