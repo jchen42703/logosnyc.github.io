@@ -4,6 +4,13 @@
 @import "_include-media";
 @import "_hero.scss";
 
+.hero-bg-home {
+  @include hero-bg(
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png")
+  );
+}
+
 $header-neg-space: -1.375em;
 
 .header {
