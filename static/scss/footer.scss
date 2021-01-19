@@ -14,9 +14,13 @@
   .info {
     display: grid;
     justify-content: center;
-    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    grid-template-rows: repeat(5, 1fr);
     row-gap: 10%;
     margin-top: 1%;
+    @include media("<=tablet") {
+      row-gap: 1%;
+    }
   }
 
   a {
