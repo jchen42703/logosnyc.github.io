@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import "_include-media";
 @import "./_colors";
 @import "./_general";
@@ -11,7 +10,10 @@
 .three-cards {
   display: flex;
   flex-flow: column;
-  padding: 0 15%;
+  padding: 0 37%;
+  @include media("<=tablet") {
+    padding: 0 15%;
+  }
 }
 
 .dark-grey {
@@ -21,7 +23,7 @@
 $top-spacing: 3%;
 
 .giving-box {
-  padding: $top-spacing 30%;
+  padding: $top-spacing 0%;
   width: 100%;
 
   p {
