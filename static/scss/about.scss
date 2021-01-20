@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import "./_colors";
+@import "_include-media";
+@import "./fontFormatting";
+@import "./_general";
+@import "./_hero";
 
-* {
+*{
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -10,6 +14,7 @@
 
 body {
   background-repeat: no-repeat;
+  background-color: $white;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -19,6 +24,10 @@ body {
 
 html {
   font-size: 10px;
+}
+
+div{
+  display: block;
 }
 
 #hero-heading {
@@ -44,7 +53,7 @@ html {
 
 
 .img-container {
-  background-image: url("../../media/logos-church.jpg");
+  background-image: url("../../media/about/logos-church.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,96 +89,126 @@ html {
 
 .mission{
   text-align: center;
+  background-color: $white;
   h1{
     letter-spacing: 5px;
     color: $dark-grey;
     margin-top: 5rem;
     font-size: 40px;
+    @include media("<=tablet") {
+      font-size: 3rem;
+     }
   }
 
   p{
     margin-top: 18px;
     margin-bottom: 9px;
     font-size: 18px;
+    @include media("<=tablet") {
+      font-size: 1.5rem;
+     }
   }
 }
 
 .our-staff-header{
+  background-color: $white;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 
   h1{
     letter-spacing: 5px;
     color: $dark-grey;
     margin-top: 5rem;
     font-size: 40px;
+    @include media("<=tablet") {
+      font-size: 3rem;
+     }
   }
 
   p{
     font-size:18px;
     margin-top: 1.5rem;
-    margin-bottom: 5rem;
+
+    @include media("<=tablet") {
+      font-size: 1.5rem;
+     }
   }
 
   
 }
 
-.staff-container{
-  width: 100%;
+.our-staff-section{
+  overflow: hidden;
   text-align: center;
-  margin-top: 5rem;
-  background-color: $light-green;
-  letter-spacing: 2px;
-
-  h1{
-    font-size: 30px;
-    font-weight: 400;
-  }
-
-  h2{
-    font-size: 20px;
-    margin-left: 130px;
-    margin-top: 1.5rem;
-    font-weight: 200;
-  }
-
-  
+  background:$light-green;
+  padding: 60px;
 }
 
-.our-staff{
+.border{ 
   display: block;
-  height: 55vh;
- 
-
+  margin:auto;
+  width: 160px;
+  height: 3px;
+  background: $dark-green;;
+  margin-bottom: 40px;
 }
 
-.staff-img{
-  margin-top: -13em;
-  padding-left: 450px;
-  padding-right: 18px;
-  float: left;
-  
-  
+.ps{
+  margin-bottom: 40px;
 }
 
-.our-staff-description{
-  padding-top: 50px;
-  padding-right: 400px;
-  padding-left: 950px;
-  justify-content: center;
+.ps a{
+  display: inline-block;
+  margin: 0 30px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ps a img {
   width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s all;
+}
+
+.ps a:hover > img{
+  filter: none;
+
+}
+
+.section{
+  width: 40%;
+  margin: auto;
   font-size: 20px;
+  text-align: justify;
+  height: 0;
+  overflow: hidden;
 
-  
+  p{
+    margin-bottom: 100px;
+    font-size: 18px;
+
+    @include media("<=tablet") {
+     font-size: 1.5rem;
+    }
+  }
 }
 
-#pastor-mary-h1{
-
-  margin-left: 70px;
-  margin-top: 1.5rem;
+.section:target{
+  height: auto;
 }
 
-#pastor-mary-h2{
-  margin-right: 150px;
-  margin-top: 1.5rem;
+.name{
+  color: $dark-grey;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+
+  @include media("<=tablet") {
+    font-size: 3rem;
+   }
 }
+
+
