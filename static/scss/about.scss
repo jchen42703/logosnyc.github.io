@@ -211,4 +211,7 @@ div{
    }
 }
 
+.hero-bg-giving {
+  @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
+}
 
