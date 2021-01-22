@@ -1,5 +1,4 @@
 @import "../abstracts/global";
-@import "../base/global";
 
 @mixin btn($color, $background-color) {
   color: $color;
@@ -27,7 +26,3 @@
 a.green-btn {
   @include btn($white, $green);
 }
-
-// a.btn-dark-grey {
-//   @include btn($white, $dark-grey);
-// }

@@ -1,5 +1,4 @@
 @import "../abstracts/global";
-@import "../base/global";
 
 @mixin hover-link($color: inherit, $hover-color: $green, $font-size: inherit) {
   font-size: $font-size;
