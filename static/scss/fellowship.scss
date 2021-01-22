@@ -4,70 +4,12 @@
 @import "./components/header";
 @import "./components/hero";
 @import "./components/links";
-
-$top-spacing: 5%;
+@import "./components/info-containers";
 
 .hero-bg-fellowship {
   @include hero-bg-dark-gradient(
     url("http://em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png")
   );
-}
-
-.info-container-l {
-  text-align: center;
-  background-color: $white;
-  color: $dark-grey;
-  padding-top: $smallPadding-v;
-  padding-bottom: $smallPadding-v;
-  width: 100%;
-
-  p {
-    font-size: $content-size;
-    @include media("<=phone") {
-      font-size: $phone-content-size;
-    }
-  }
-
-  .info-only {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: $top-spacing 15%;
-  }
-
-  .info-img-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    padding: $top-spacing 15%;
-
-    @include media("<=tablet") {
-      display: flex;
-      flex-flow: column;
-    }
-
-    img {
-      width: 80%;
-      margin: 0 auto;
-      @include media("<=tablet") {
-        margin: $top-spacing auto;
-      }
-    }
-  }
-}
-
-.info-container-d {
-  @extend .info-container-l;
-  background-color: $dark-grey;
-  color: $white;
-
-  .info-img-container {
-    img {
-      @include media("<=tablet") {
-        margin: 0 auto $top-spacing auto;
-      }
-    }
-  }
 }
 
 table {
