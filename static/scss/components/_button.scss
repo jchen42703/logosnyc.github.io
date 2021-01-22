@@ -28,10 +28,6 @@ a.green-btn {
   @include btn($white, $green);
 }
 
-a.button1 {
-  @include btn($white, $green);
-}
-
 // a.btn-dark-grey {
 //   @include btn($white, $dark-grey);
 // }
