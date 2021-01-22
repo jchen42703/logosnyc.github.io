@@ -2,22 +2,7 @@
 @import "./base/global";
 @import "./vendors/include-media";
 @import "./home.scss";
-
-.link-d {
-  cursor: pointer;
-  color: $dark-green;
-  text-decoration: none;
-}
-
-.link-l {
-  @extend .link-d;
-  color: $green;
-}
-
-.link-grey {
-  @extend .link-d;
-  color: $dark-grey;
-}
+@import "./components/links";
 
 $top-spacing: 5%;
 

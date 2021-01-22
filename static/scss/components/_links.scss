@@ -14,3 +14,21 @@
     }
   }
 }
+
+@mixin no-hover-link($color) {
+  cursor: pointer;
+  text-decoration: none;
+  color: $color;
+}
+
+.link-d {
+  @include no-hover-link($dark-green);
+}
+
+.link-l {
+  @include no-hover-link($green);
+}
+
+.link-grey {
+  @include no-hover-link($dark-grey);
+}
