@@ -4,7 +4,7 @@
 @import "../components/info-containers";
 
 .hero-bg-events {
-  @include hero-bg-dark-gradient(url("../../../media/events/events-hero.jpg"));
+  @include hero-bg-dark-gradient(url("../../media/events/events-hero.jpg"));
 }
 
 .info-v-space {

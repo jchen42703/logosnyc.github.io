@@ -7,7 +7,7 @@
 @import "../components/info-containers";
 
 .hero-bg-giving {
-  @include hero-bg-dark-gradient(url("../../../media/giving/giving-hero.jpg"));
+  @include hero-bg-dark-gradient(url("../../media/giving/giving-hero.jpg"));
 }
 
 .three-cards {
