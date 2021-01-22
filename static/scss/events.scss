@@ -1,0 +1,18 @@
+@import "./_colors";
+@import "./_hero";
+@import "./_general";
+
+.hero-bg-events {
+  @include hero-bg-dark-gradient(url("../../media/events/events-hero.jpg"));
+}
+
+.info-v-space {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  * {
+    margin: 1.5% 0;
+  }
+}
