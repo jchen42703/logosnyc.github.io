@@ -1,7 +1,7 @@
 @import "./abstracts/global";
 @import "./base/global";
 @import "./vendors/include-media";
-@import "./home.scss";
+@import "./components/header";
 @import "./components/links";
 
 $top-spacing: 5%;
@@ -47,13 +47,6 @@ $top-spacing: 5%;
       }
     }
   }
-
-  .header {
-    position: relative;
-    background-color: $dark-grey;
-    color: $white;
-    margin: 0;
-  }
 }
 
 .info-container-d {
@@ -67,11 +60,6 @@ $top-spacing: 5%;
         margin: 0 auto $top-spacing auto;
       }
     }
-  }
-
-  .header {
-    background-color: $green;
-    color: $white;
   }
 }
 
@@ -99,7 +87,6 @@ table {
     }
 
     th {
-      // border: $table-border;
       font-weight: normal;
     }
   }
