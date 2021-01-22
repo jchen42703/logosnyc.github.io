@@ -1,7 +1,7 @@
-@import "./abstracts/global";
-@import "./base/global";
-@import "./vendors/include-media";
-@import "./components/links";
+@import "../abstracts/global";
+@import "../base/global";
+@import "../vendors/include-media";
+@import "./links";
 
 .contact-container {
   background-color: $dark-grey;
