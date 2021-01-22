@@ -9,3 +9,8 @@
   color: $white;
   background-color: $green;
 }
+
+@mixin white-bg {
+  color: $dark-grey;
+  background-color: $white;
+}
