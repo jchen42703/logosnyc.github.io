@@ -1,18 +1,18 @@
 @import "../abstracts/global";
 @import "../base/global";
 
-.icon-link {
-  color: $white;
+@mixin hover-link($color: inherit, $hover-color: $green, $font-size: inherit) {
+  font-size: $font-size;
+  color: $color;
+  text-decoration: none;
 
-  a {
-    font-size: $content-size - 0.15em;
-    color: inherit;
-    text-decoration: none;
-
-    &:hover {
-      color: $green;
-    }
+  &:hover {
+    color: $hover-color;
   }
+}
+
+.white-hover-link {
+  @include hover-link($white, $green);
 }
 
 @mixin no-hover-link($color) {
