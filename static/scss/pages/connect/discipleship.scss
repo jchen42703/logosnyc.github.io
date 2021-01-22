@@ -1,0 +1,12 @@
+@import "../../vendors/include-media";
+@import "../../components/hero";
+@import "../../components/info-containers";
+@import "../../components/links";
+@import "../../components/substitutes";
+@import "../../components/tables";
+
+.hero-bg-discipleship {
+  @include hero-bg-dark-gradient(
+    url("http://em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png")
+  );
+}

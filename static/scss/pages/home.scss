@@ -1,11 +1,11 @@
-@import "./abstracts/global";
-@import "./base/global";
-@import "./vendors/include-media";
-@import "./components/hero";
-@import "./components/button";
-@import "./components/links";
-@import "./components/padding";
-@import "./components/header";
+@import "../abstracts/global";
+@import "../base/global";
+@import "../vendors/include-media";
+@import "../components/hero";
+@import "../components/button";
+@import "../components/links";
+@import "../components/padding";
+@import "../components/header";
 
 .hero-bg-home {
   @include hero-bg-dark-gradient(

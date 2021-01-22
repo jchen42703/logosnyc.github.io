@@ -1,7 +1,7 @@
-@import "./abstracts/global";
-@import "./base/global";
-@import "./vendors/include-media";
-@import "./components/hero";
+@import "../abstracts/global";
+@import "../base/global";
+@import "../vendors/include-media";
+@import "../components/hero";
 
 .hero-bg-giving {
   @include hero-bg-dark-gradient(url("../../media/giving/giving-hero.jpg"));
