@@ -1,10 +1,5 @@
-@import "../abstracts/global";
-@import "../base/global";
 @import "../vendors/include-media";
-@import "../components/button";
-@import "../components/header";
 @import "../components/hero";
-@import "../components/info-containers";
 
 .hero-bg-giving {
   @include hero-bg-dark-gradient(url("../../media/giving/giving-hero.jpg"));

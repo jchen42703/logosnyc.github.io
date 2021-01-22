@@ -1,7 +1,4 @@
 @import "../../components/hero";
-@import "../../components/info-containers";
-@import "../../components/links";
-@import "../../components/substitutes";
 
 .hero-bg-outreach {
   @include hero-bg-dark-gradient(

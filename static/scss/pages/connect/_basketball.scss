@@ -1,10 +1,4 @@
-@import "../../vendors/include-media";
-@import "../../components/header";
 @import "../../components/hero";
-@import "../../components/info-containers";
-@import "../../components/links";
-@import "../../components/substitutes";
-@import "../../components/tables";
 
 .hero-bg-basketball {
   @include hero-bg-dark-gradient(
