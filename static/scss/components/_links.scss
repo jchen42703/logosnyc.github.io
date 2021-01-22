@@ -1,0 +1,16 @@
+@import "../abstracts/global";
+@import "../base/global";
+
+.icon-link {
+  color: $white;
+
+  a {
+    font-size: $content-size - 0.15em;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}

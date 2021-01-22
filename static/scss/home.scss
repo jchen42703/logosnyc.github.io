@@ -1,8 +1,10 @@
-@import "./_colors";
-@import "./_general";
-@import "./fontFormatting";
-@import "_include-media";
-@import "_hero.scss";
+@import "./abstracts/global";
+@import "./base/global";
+@import "./vendors/include-media";
+@import "./components/hero";
+@import "./components/button";
+@import "./components/links";
+@import "./components/padding";
 
 .hero-bg-home {
   @include hero-bg-dark-gradient(

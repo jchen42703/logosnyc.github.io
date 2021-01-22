@@ -1,3 +1,6 @@
+@import "../abstracts/global";
+@import "../base/global";
+
 /* hero */
 @mixin hero-bg($gradient, $bg-img) {
   /* Background styles */

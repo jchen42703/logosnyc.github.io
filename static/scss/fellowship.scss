@@ -1,7 +1,6 @@
-@import "./_colors";
-@import "./_general";
-@import "./fontFormatting";
-@import "_include-media";
+@import "./abstracts/global";
+@import "./base/global";
+@import "./vendors/include-media";
 @import "./home.scss";
 
 .link-d {

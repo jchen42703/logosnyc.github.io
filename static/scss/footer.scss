@@ -1,6 +1,6 @@
-@import "./_colors";
-@import "./_general";
-@import "_include-media";
+@import "./abstracts/global";
+@import "./base/global";
+@import "./vendors/include-media";
 
 .contact-container {
   background-color: $dark-grey;

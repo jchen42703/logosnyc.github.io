@@ -1,7 +1,6 @@
-@import "./_colors";
-@import "./_general";
-@import "./fontFormatting";
-@import "./include-media";
+@import "./abstracts/global";
+@import "./base/global";
+@import "./vendors/include-media";
 
 @mixin transform($value) {
   -webkit-transform: ($value);
