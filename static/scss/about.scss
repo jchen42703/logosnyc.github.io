@@ -4,38 +4,19 @@
 @import "./_general";
 @import "./_hero";
 
-.mission {
-  text-align: center;
-  background-color: $white;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-
-  h1 {
-    letter-spacing: 5px;
-    color: $dark-grey;
-    font-size: 40px;
-    @include media("<=tablet") {
-      font-size: 3rem;
-    }
-  }
-
-  p {
-    font-size: $content-size;
-    @include media("<=tablet") {
-      font-size: $phone-content-size;
-    }
-  }
+.hero-bg-about {
+  @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
 }
 
-.our-staff-header {
-  background-color: $white;
+.text-container {
   text-align: center;
+  background-color: $white;
+  color: $dark-grey;
   padding-bottom: 5rem;
   padding-top: 5rem;
 
   h1 {
     letter-spacing: 5px;
-    color: $dark-grey;
     font-size: 40px;
     @include media("<=tablet") {
       font-size: 3rem;
@@ -44,7 +25,6 @@
 
   p {
     font-size: $content-size;
-
     @include media("<=tablet") {
       font-size: $phone-content-size;
     }
@@ -121,8 +101,4 @@
   @include media("<=tablet") {
     font-size: 3rem;
   }
-}
-
-.hero-bg-about {
-  @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
 }
