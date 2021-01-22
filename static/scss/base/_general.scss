@@ -1,3 +1,6 @@
+@import "../abstracts/variables";
+@import "../vendors/include-media";
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,12 @@
   line-height: 1.7;
 }
 
+p {
+  font-size: $content-size;
+  @include media("<=phone") {
+    font-size: $phone-content-size;
+  }
+}
 // hr {
 //   margin: 5vh 15vw;
 //   border: 2px solid $dark-grey;
