@@ -1,10 +1,10 @@
-@import "../abstracts/global";
 @import "../base/global";
-@import "../vendors/include-media";
+@import "../components/button";
 @import "../components/hero";
+@import "../components/info-containers";
 
 .hero-bg-events {
-  @include hero-bg-dark-gradient(url("../../media/events/events-hero.jpg"));
+  @include hero-bg-dark-gradient(url("../../../media/events/events-hero.jpg"));
 }
 
 .info-v-space {
