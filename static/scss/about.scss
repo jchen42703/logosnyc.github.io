@@ -137,81 +137,46 @@ div{
   
 }
 
-.our-staff-section{
-  overflow: hidden;
+.our-staff-container{
+  background: $white;
+  margin: 0 auto;
+  padding: 0 3rem;
+  margin-top: 4rem;
   text-align: center;
-  background:$light-green;
-  padding: 60px;
-}
 
-.border{ 
-  display: block;
-  margin:auto;
-  width: 160px;
-  height: 3px;
-  background: $dark-green;;
-  margin-bottom: 40px;
-}
+  h1{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color:$dark-grey;
+    font-size: 30px;
+    margin-top: 2rem;
+  }
+  h2{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color:$dark-grey;
+    font-size: 20px;
+  }
 
-.ps{
-  margin-bottom: 40px;
-}
+  .image{
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
 
-.ps a{
-  display: inline-block;
-  margin: 0 30px;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.ps a img {
-  width: 100%;
-  filter: grayscale(100%);
-  transition: 0.4s all;
-}
-
-.ps a:hover > img{
-  filter: none;
-
-}
-
-.section{
-  width: 40%;
-  margin: auto;
-  font-size: 20px;
-  text-align: justify;
-  height: 0;
-  overflow: hidden;
 
   p{
-    margin-bottom: 100px;
-    font-size: 18px;
-
-    @include media("<=tablet") {
-     font-size: 1.5rem;
-    }
+    font-size: 2rem;
+    padding-left: 25%;
+    padding-right: 26%;
+    line-height: 5rem;
   }
 }
 
-.section:target{
-  height: auto;
-}
-
-.name{
-  color: $dark-grey;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 30px;
-
-  @include media("<=tablet") {
-    font-size: 3rem;
-   }
-}
 
 .hero-bg-giving {
   @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
 }
+
+
+
 
