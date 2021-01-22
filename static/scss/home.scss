@@ -5,26 +5,12 @@
 @import "./components/button";
 @import "./components/links";
 @import "./components/padding";
+@import "./components/header";
 
 .hero-bg-home {
   @include hero-bg-dark-gradient(
     url("http://em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png")
   );
-}
-
-$header-neg-space: -1.375em;
-
-.header {
-  display: inline-block !important;
-  color: $white;
-  background-color: $dark-grey;
-  padding: 10px 16px;
-  margin-top: $header-neg-space;
-  margin-bottom: 0.5rem;
-  margin-left: 1em;
-  margin-right: 1em;
-  font-size: 34px;
-  font-weight: bold;
 }
 
 .two-columns {
@@ -81,11 +67,6 @@ $header-neg-space: -1.375em;
       max-width: 90vw;
       min-width: 75vw;
     }
-  }
-
-  .header {
-    background-color: $green;
-    color: $white;
   }
 
   .content {
@@ -192,9 +173,7 @@ $header-neg-space: -1.375em;
       }
     }
 
-    .header {
-      color: $white;
-      background-color: $green;
+    .offset-header-l {
       @include media("<=tablet") {
         background-color: $dark-grey;
         position: relative;
@@ -242,7 +221,7 @@ $header-neg-space: -1.375em;
       margin-left: 5%;
     }
 
-    .header {
+    .offset-header-d {
       @include media("<=tablet") {
         margin: 0 10%;
       }
@@ -321,9 +300,7 @@ $header-neg-space: -1.375em;
     }
   }
 
-  .header {
-    background-color: $dark-grey;
-    color: $white;
+  .offset-header-d {
     margin-left: 15%;
     @include media("<=tablet") {
       margin-left: 0;
