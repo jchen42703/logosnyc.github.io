@@ -17,7 +17,7 @@
 
   h1 {
     letter-spacing: 5px;
-    font-size: 40px;
+    font-size: $header-font-size;
     @include media("<=tablet") {
       font-size: 3rem;
     }
