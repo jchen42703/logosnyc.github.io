@@ -1,31 +1,16 @@
 @import "../vendors/include-media";
 @import "../components/hero";
+@import "../components/info-containers";
 
 .hero-bg-giving {
   @include hero-bg-dark-gradient(url("../../media/giving/giving-hero.jpg"));
 }
 
-.three-cards {
-  display: flex;
-  flex-flow: column;
-  padding: 0 37%;
-  @include media("<=tablet") {
-    padding: 0 15%;
-  }
+.single-col-container-giving {
+  @include single-col-container(37%, 15%);
 }
-
-.dark-grey {
-  color: $dark-grey;
-}
-
-$top-spacing: 3%;
 
 .giving-box {
-  padding: $top-spacing 0%;
+  padding: 3% 0%;
   width: 100%;
-
-  p {
-    font-size: $content-size;
-    display: block;
-  }
 }
