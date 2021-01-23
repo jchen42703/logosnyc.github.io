@@ -1,8 +1,6 @@
-@import "./_colors";
-@import "_include-media";
-@import "./fontFormatting";
-@import "./_general";
-@import "./_hero";
+@import "../abstracts/global";
+@import "../vendors/include-media";
+@import "../components/hero";
 
 .hero-bg-about {
   @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
@@ -20,13 +18,6 @@
     font-size: 40px;
     @include media("<=tablet") {
       font-size: 3rem;
-    }
-  }
-
-  p {
-    font-size: $content-size;
-    @include media("<=tablet") {
-      font-size: $phone-content-size;
     }
   }
 }
@@ -49,13 +40,6 @@
       font-size: 40px;
       @include media("<=tablet") {
         font-size: 3rem;
-      }
-    }
-
-    p {
-      font-size: $content-size;
-      @include media("<=tablet") {
-        font-size: $phone-content-size;
       }
     }
   }
