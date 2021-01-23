@@ -1,0 +1,16 @@
+@import "../vendors/include-media";
+@import "../components/hero";
+@import "../components/info-containers";
+
+.hero-bg-giving {
+  @include hero-bg-dark-gradient(url("../../media/giving/giving-hero.jpg"));
+}
+
+.single-col-container-giving {
+  @include single-col-container(37%, 15%);
+}
+
+.giving-box {
+  padding: 3% 0%;
+  width: 100%;
+}

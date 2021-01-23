@@ -1,0 +1,33 @@
+@import "../abstracts/global";
+
+@mixin hover-link($color: inherit, $hover-color: $green, $font-size: inherit) {
+  font-size: $font-size;
+  color: $color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.white-hover-link {
+  @include hover-link($white, $green);
+}
+
+@mixin no-hover-link($color) {
+  cursor: pointer;
+  text-decoration: none;
+  color: $color;
+}
+
+.link-d {
+  @include no-hover-link($dark-green);
+}
+
+.link-l {
+  @include no-hover-link($green);
+}
+
+.link-grey {
+  @include no-hover-link($dark-grey);
+}

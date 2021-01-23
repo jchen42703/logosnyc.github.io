@@ -1,0 +1,26 @@
+$green: #94d3ac;
+$dark-green: #5dba81;
+$light-green: #ccedd2;
+$white: #effcef;
+$dark-grey: #655c56;
+$grey: #f6f7f5;
+
+$content-size: 1.15em;
+$phone-content-size: 1em;
+$header-font-size: 34px;
+$card-h2-size: 1.875em;
+$card-reg-size: 0.938em;
+
+$smallPadding-v: 10vh;
+$largePadding-v: 30vh;
+
+$header-neg-space: -1.375em;
+$top-spacing: 5%;
+
+$breakpoints: (
+  phone: 411px,
+  tablet: 768px,
+  desktop: 1024px,
+  fellowship-container-cutoff: 1240px,
+  // where the contents container stretches beyond the image
+) !default;

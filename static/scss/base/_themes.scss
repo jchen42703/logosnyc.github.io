@@ -1,0 +1,16 @@
+@import "../abstracts/variables";
+
+@mixin dark-grey-bg {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+@mixin green-bg {
+  color: $white;
+  background-color: $green;
+}
+
+@mixin white-bg {
+  color: $dark-grey;
+  background-color: $white;
+}
