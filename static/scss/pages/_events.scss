@@ -1,6 +1,4 @@
-@import "./_colors";
-@import "./_hero";
-@import "./_general";
+@import "../components/hero";
 
 .hero-bg-events {
   @include hero-bg-dark-gradient(url("../../media/events/events-hero.jpg"));

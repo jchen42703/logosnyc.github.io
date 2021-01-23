@@ -1,0 +1,31 @@
+@import "../abstracts/global";
+@import "../base/global";
+@import "../vendors/include-media";
+
+table {
+  border-collapse: collapse;
+
+  thead tr {
+    @include dark-grey-bg;
+  }
+
+  td,
+  th {
+    text-align: left;
+    padding: 15px;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: $light-green;
+    }
+
+    tr:nth-child(odd) {
+      background-color: $grey;
+    }
+
+    th {
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import "../../components/hero";
+
+.hero-bg-outreach {
+  @include hero-bg-dark-gradient(
+    url("http://em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png")
+  );
+}

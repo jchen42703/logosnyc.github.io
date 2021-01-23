@@ -1,0 +1,35 @@
+@import "../abstracts/global";
+@import "../vendors/include-media";
+@import "../components/hero";
+@import "../components/info-containers";
+@import "../components/padding";
+
+.hero-bg-about {
+  @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
+}
+
+.single-col-container-staff {
+  @include single-col-container(25%, 15%);
+
+  h2 {
+    font-size: $card-h2-size;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: $card-h2-size - 0.625em;
+    text-transform: uppercase;
+  }
+
+  .pad {
+    @include v-padding(10%, inherit);
+  }
+
+  .image {
+    margin: 3% 0;
+    img {
+      width: 40%;
+      height: auto;
+    }
+  }
+}
