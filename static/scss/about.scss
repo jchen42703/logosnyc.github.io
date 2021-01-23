@@ -1,112 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import "./_colors";
 @import "_include-media";
 @import "./fontFormatting";
 @import "./_general";
 @import "./_hero";
 
-*{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.hero-bg-about {
+  @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
 }
 
-body {
-  background-repeat: no-repeat;
-  background-color: $white;
-  font-family: "Ubuntu", sans-serif;
-}
-
-.hero {
-  height: 100vh;
-}
-
-html {
-  font-size: 10px;
-}
-
-div{
-  display: block;
-}
-
-#hero-heading {
-  font-size: 7rem;
-  font-family: "Ubuntu", sans-serif;
-  color: $white;
-}
-
-.btn-hero {
-  display: inline-block;
-  width: 200px;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-  color: $white;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
-}
-
-
-
-.img-container {
-  background-image: url("../../media/about/logos-church.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.inner-container {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  margin-top: 300px;
-}
-
-@media only screen and (max-width: 920px) {
-  .inner-container {
-    margin-top: 100px;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .inner-container {
-    margin-top: 150px;
-  }
-  #hero-heading {
-    font-size: 5em;
-  }
-  #img-heading {
-    font-size: 1.4em;
-  }
-}
-
-.mission{
+.text-container {
   text-align: center;
   background-color: $white;
-  h1{
+  color: $dark-grey;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+
+  h1 {
     letter-spacing: 5px;
-    color: $dark-grey;
-    margin-top: 5rem;
     font-size: 40px;
     @include media("<=tablet") {
       font-size: 3rem;
-     }
+    }
   }
 
-  p{
-    margin-top: 18px;
-    margin-bottom: 9px;
-    font-size: 18px;
+  p {
+    font-size: $content-size;
     @include media("<=tablet") {
-      font-size: 1.5rem;
-     }
+      font-size: $phone-content-size;
+    }
   }
 }
 
@@ -126,11 +47,11 @@ div{
   }
 
   p{
-    font-size:18px;
+    font-size:$content-size;
     margin-top: 1.5rem;
 
     @include media("<=tablet") {
-      font-size: 1.5rem;
+      font-size: $phone-content-size;
      }
   }
 
@@ -150,12 +71,18 @@ div{
     color:$dark-grey;
     font-size: 30px;
     margin-top: 2rem;
+    @include media("<=tablet") {
+      font-size: 1.5rem;
+    }
   }
   h2{
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color:$dark-grey;
     font-size: 20px;
+    @include media("<=tablet") {
+      font-size: 1rem;
+    }
   }
 
   .image{
@@ -163,17 +90,13 @@ div{
     margin-bottom: 5rem;
   }
 
-
   p{
-    font-size: 2rem;
+    font-size: $content-size;
     padding-left: 25%;
     padding-right: 26%;
-    line-height: 5rem;
+    line-height: 2.5rem;
+    @include media("<=tablet") {
+      font-size: $phone-content-size;
+    }
   }
 }
-
-
-.hero-bg-giving {
-  @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
-}
-
