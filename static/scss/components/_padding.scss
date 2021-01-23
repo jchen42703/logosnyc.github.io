@@ -1,8 +1,8 @@
 @import "../abstracts/global";
 
-@mixin v-padding($vPadding) {
+@mixin v-padding($vPadding, $bg-color: $white) {
   padding: ($vPadding/2) 0vw;
-  background-color: $white;
+  background-color: $bg-color;
 }
 
 .padding-small {
