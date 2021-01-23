@@ -31,14 +31,11 @@
   }
 }
 
-
-
-.our-staff-container{
+.our-staff-container {
   background: $dark-grey;
   margin: 0 auto;
   padding: 0 3rem;
   text-align: center;
-
 
   .text-container {
     text-align: center;
@@ -46,7 +43,7 @@
     color: $dark-grey;
     padding-bottom: 2rem;
     padding-top: 5rem;
-  
+
     h1 {
       letter-spacing: 5px;
       font-size: 40px;
@@ -54,7 +51,7 @@
         font-size: 3rem;
       }
     }
-  
+
     p {
       font-size: $content-size;
       @include media("<=tablet") {
@@ -63,7 +60,7 @@
     }
   }
 
-  h1{
+  h1 {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color: $white;
@@ -73,7 +70,7 @@
       font-size: 1.5rem;
     }
   }
-  h2{
+  h2 {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color: $white;
@@ -83,12 +80,12 @@
     }
   }
 
-  .image{
+  .image {
     margin-top: 2.5rem;
     margin-bottom: 5rem;
   }
 
-  p{
+  p {
     font-size: $content-size;
     color: $white;
     padding-left: 25%;
