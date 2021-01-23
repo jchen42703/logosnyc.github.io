@@ -13,7 +13,10 @@
 
   .info-only {
     @include flex-center;
-    padding: $top-spacing 15%;
+    padding: $top-spacing/2 15%;
+    @include media("<=tablet") {
+      padding: $top-spacing 15%;
+    }
   }
 
   .info-img-container {
@@ -52,5 +55,14 @@
         margin: 0 auto $top-spacing auto;
       }
     }
+  }
+}
+
+@mixin single-col-container($padding-lr: 37%, $padding-lr-mobile: 15%) {
+  display: flex;
+  flex-flow: column;
+  padding: 0 $padding-lr;
+  @include media("<=tablet") {
+    padding: 0 $padding-lr-mobile;
   }
 }
