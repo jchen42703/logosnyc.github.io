@@ -1,82 +1,35 @@
 @import "../abstracts/global";
 @import "../vendors/include-media";
 @import "../components/hero";
+@import "../components/info-containers";
+@import "../components/padding";
 
 .hero-bg-about {
   @include hero-bg-dark-gradient(url("../../media/about/logos-church.jpg"));
 }
 
-.text-container {
-  text-align: center;
-  background-color: $white;
-  color: $dark-grey;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+.single-col-container-staff {
+  @include single-col-container(25%, 15%);
 
-  h1 {
-    letter-spacing: 5px;
-    font-size: 40px;
-    @include media("<=tablet") {
-      font-size: 3rem;
-    }
-  }
-}
-
-.our-staff-container {
-  background: $dark-grey;
-  margin: 0 auto;
-  padding: 0 3rem;
-  text-align: center;
-
-  .text-container {
-    text-align: center;
-    background-color: $dark-grey;
-    color: $dark-grey;
-    padding-bottom: 2rem;
-    padding-top: 5rem;
-
-    h1 {
-      letter-spacing: 5px;
-      font-size: 40px;
-      @include media("<=tablet") {
-        font-size: 3rem;
-      }
-    }
-  }
-
-  h1 {
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: $white;
-    font-size: 30px;
-    padding-top: 2rem;
-    @include media("<=tablet") {
-      font-size: 1.5rem;
-    }
-  }
   h2 {
+    font-size: $card-h2-size;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: $white;
-    font-size: 20px;
-    @include media("<=tablet") {
-      font-size: 1rem;
-    }
+  }
+
+  h3 {
+    font-size: $card-h2-size - 0.625em;
+    text-transform: uppercase;
+  }
+
+  .pad {
+    @include v-padding(10%, inherit);
   }
 
   .image {
-    margin-top: 2.5rem;
-    margin-bottom: 5rem;
-  }
-
-  p {
-    font-size: $content-size;
-    color: $white;
-    padding-left: 25%;
-    padding-right: 26%;
-    line-height: 2.5rem;
-    @include media("<=tablet") {
-      font-size: $phone-content-size;
+    margin: 3% 0;
+    img {
+      width: 40%;
+      height: auto;
     }
   }
 }
