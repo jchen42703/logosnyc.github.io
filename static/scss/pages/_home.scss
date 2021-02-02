@@ -4,9 +4,7 @@
 @import "../components/hero";
 
 .hero-bg-home {
-  @include hero-bg-dark-gradient(
-    url("http://em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png")
-  );
+  @include hero-bg-dark-gradient(url("../../media/home/home-hero.png"));
 }
 
 .two-columns {
