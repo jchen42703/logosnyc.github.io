@@ -6,6 +6,10 @@
 
   - To use compile the scss, use `node-sass` and the command `node-sass static/scss -o static/css` in the root directory.
     - To output compressed css, run `node-sass static/scss -o static/css --output-style compressed`.
+    - To remove duplicate css, use `postcss` and `cssnano`:
+      - `npm install cssnano --save-dev`
+      - `npm install postcss-cli --global`
+      - For Windows users, run `removeDuplicateCSS.bat` in command to produce a css file without duplicates. It's much slower than just using `node-sass` so this is only recommended for production.
   - To install `include-media`, run `npm install include-media` for the user and then use the appropriate `@import` for `scss/vendor/s_include-media.scss`.
 
 - The actual website (logosnyc.github.io) is located on the `build` branch, where the `css` is actually compiled and committed. Everything else is `scss`.
