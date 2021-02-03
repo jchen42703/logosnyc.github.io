@@ -22,7 +22,6 @@
   width: 100%;
   min-height: 96px;
   top: 0;
-  // padding-top: 3vh;
 
   .logo {
     height: 65%;
@@ -203,7 +202,7 @@
       flex-direction: column;
       position: fixed;
       justify-content: start;
-      top: 65px;
+      top: 75px;
       background-color: $dark-grey;
       width: 100%;
       height: calc(100vh - 55px);
