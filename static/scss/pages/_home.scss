@@ -48,9 +48,7 @@
 
   .wrapper {
     background-color: $dark-grey;
-    margin-left: 3.5em;
-    margin-top: -6em;
-    margin-right: 1em;
+    margin: -6em 1em 0 0;
     position: relative !important;
     display: block;
     font-weight: normal;
@@ -101,9 +99,9 @@
   }
 
   img {
-    width: 60vw;
+    width: 50vw;
     position: relative;
-    grid-column-start: 4;
+    grid-column-start: 5;
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 13;
@@ -115,13 +113,12 @@
   }
 
   .img-card {
-    grid-column-start: 1;
+    @include dark-grey-bg;
+    grid-column-start: 2;
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 11;
-    color: $white;
     z-index: 1;
-    background-color: $dark-grey;
     padding: 0 2.25em 2.325em 2.25em;
     @include media("<=tablet") {
       display: block;
@@ -140,8 +137,7 @@
     .content {
       font-size: $content-size;
       max-width: 550px;
-      margin-top: 4vh;
-      margin-left: 5%;
+      margin: 5% 5% 0;
       @include media("<=tablet") {
         position: relative;
         padding: 0;
@@ -177,10 +173,11 @@
 // img-card to the right of the image
 .h-overlap-container-r {
   @extend .h-overlap-container-l;
+  padding: $smallPadding-v/2 5% $smallPadding-v;
 
   img {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 13;
     @include media("<=tablet") {
@@ -189,20 +186,29 @@
   }
 
   .img-card {
-    grid-column-start: 6;
-    grid-column-end: 13;
+    grid-column-start: 7;
+    grid-column-end: 12;
     grid-row-start: 3;
     grid-row-end: 11;
-
-    .content {
-      margin-right: 5%;
-      margin-left: 5%;
-    }
 
     .offset-header-d {
       @include media("<=tablet") {
         margin: 0 10%;
       }
+    }
+  }
+}
+
+.single-col-info-container-l {
+  @extend .info-container-l;
+  padding-top: 0;
+
+  .info-only {
+    flex-flow: column;
+
+    img {
+      width: 50%;
+      margin: 3% 0 0;
     }
   }
 }
