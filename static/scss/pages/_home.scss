@@ -181,7 +181,7 @@
     grid-row-start: 1;
     grid-row-end: 13;
     @include media("<=tablet") {
-      margin-bottom: 5%;
+      margin: 5% 0;
     }
   }
 
