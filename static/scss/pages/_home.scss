@@ -204,11 +204,21 @@
   padding-top: 0;
 
   .info-only {
+    * {
+      margin: 1% 0;
+      @include media("<=tablet") {
+        margin: 2.5% 0;
+      }
+    }
+
+    padding: 0;
     flex-flow: column;
 
     img {
-      width: 50%;
-      margin: 3% 0 0;
+      width: 45%;
+      @include media("<=tablet") {
+        width: 70%;
+      }
     }
   }
 }
