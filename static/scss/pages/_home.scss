@@ -2,23 +2,20 @@
 @import "../base/global";
 @import "../vendors/include-media";
 @import "../components/hero";
+@import "../components/info-containers";
 
 .hero-bg-home {
-  @include hero-bg-dark-gradient(
-    url("http://em.logosny.org/wp-content/uploads/2017/01/Welcome-Slider.png")
-  );
+  @include hero-bg-dark-gradient(url("../../media/home/home-hero.png"));
 }
 
 .two-columns {
-  background-color: $white;
-  width: 100%;
+  @include container($smallPadding-v 15px $smallPadding-v/2);
+  @include white-bg;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1vw;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  grid-column-gap: 1vw;
   @include media("<=tablet") {
     display: flex;
     flex-flow: column wrap;
@@ -32,6 +29,7 @@
 .service {
   color: $white;
   max-width: 50vw;
+  margin-left: 5%;
   @include media("<=tablet") {
     max-width: 100vw;
     margin-left: 1vw !important;
@@ -50,9 +48,7 @@
 
   .wrapper {
     background-color: $dark-grey;
-    margin-left: 3.5em;
-    margin-top: -6em;
-    margin-right: 1em;
+    margin: -6em 1em 0 0;
     position: relative !important;
     display: block;
     font-weight: normal;
@@ -85,32 +81,16 @@
   margin-top: 1vh;
 }
 
-.white-bg {
-  display: inline-block;
-  justify-content: center;
-  background-color: $white;
-  width: 100%;
-}
-
-.grey-bg {
-  display: inline-block;
-  background-color: $grey;
-  width: 100%;
-}
-
 // img-card to the left of the image
 .h-overlap-container-l {
+  @include container($smallPadding-v/2 5%);
+  @include white-bg;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  background-color: $white;
-  margin: 0 15%;
   @include media("<=tablet") {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin: 0 auto;
     width: 100%;
   }
@@ -119,9 +99,9 @@
   }
 
   img {
-    width: 60vw;
+    max-width: 100%;
     position: relative;
-    grid-column-start: 4;
+    grid-column-start: 5;
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 13;
@@ -133,13 +113,12 @@
   }
 
   .img-card {
-    grid-column-start: 1;
+    @include dark-grey-bg;
+    grid-column-start: 2;
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 11;
-    color: $white;
     z-index: 1;
-    background-color: $dark-grey;
     padding: 0 2.25em 2.325em 2.25em;
     @include media("<=tablet") {
       display: block;
@@ -150,16 +129,15 @@
     }
     @include media(">=tablet", "<=fellowship-container-cutoff") {
       grid-column-start: 2;
-      grid-column-end: 9;
-      grid-row-start: 2;
-      grid-row-end: 13;
+      grid-column-end: 7;
+      grid-row-start: 3;
+      grid-row-end: 11;
     }
 
     .content {
       font-size: $content-size;
       max-width: 550px;
-      margin-top: 4vh;
-      margin-left: 5%;
+      margin: 5% 5% 0;
       @include media("<=tablet") {
         position: relative;
         padding: 0;
@@ -195,31 +173,51 @@
 // img-card to the right of the image
 .h-overlap-container-r {
   @extend .h-overlap-container-l;
+  padding: $smallPadding-v/2 5% $smallPadding-v;
 
   img {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 13;
     @include media("<=tablet") {
-      margin-bottom: 5%;
+      margin: 5% 0;
     }
   }
 
   .img-card {
-    grid-column-start: 6;
-    grid-column-end: 13;
+    grid-column-start: 7;
+    grid-column-end: 12;
     grid-row-start: 3;
     grid-row-end: 11;
-
-    .content {
-      margin-right: 5%;
-      margin-left: 5%;
-    }
 
     .offset-header-d {
       @include media("<=tablet") {
         margin: 0 10%;
+      }
+    }
+  }
+}
+
+.single-col-info-container-l {
+  @extend .info-container-l;
+  padding-top: 0;
+
+  .info-only {
+    * {
+      margin: 1% 0;
+      @include media("<=tablet") {
+        margin: 2.5% 0;
+      }
+    }
+
+    padding: 0;
+    flex-flow: column;
+
+    img {
+      width: 45%;
+      @include media("<=tablet") {
+        width: 70%;
       }
     }
   }
@@ -230,85 +228,4 @@
   width: 100%;
   padding-top: -1 * $header-neg-space + 0.6em;
   background-color: $white;
-}
-
-// Upcoming Events Container
-.card-grid-container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  min-height: 45vh;
-  @include media("<=tablet") {
-    text-align: center;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10%;
-    margin: 5% 5% 5% 15%;
-    @include media("<=tablet") {
-      display: flex;
-      flex-flow: column wrap;
-      margin: 5%;
-    }
-  }
-
-  .card {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    color: $dark-grey;
-    text-align: left;
-    font-weight: normal;
-    padding: 1rem;
-    margin-bottom: 10%;
-
-    .card-descrip {
-      margin-left: 60px;
-
-      h2 {
-        font-size: $card-h2-size;
-        color: $green;
-      }
-
-      span {
-        font-size: $card-reg-size;
-        color: $dark-grey;
-      }
-    }
-
-    .card-stripe {
-      position: absolute;
-      width: 50px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-    }
-
-    img {
-      position: relative;
-      max-width: 100%;
-      height: auto;
-      vertical-align: middle;
-      z-index: 1;
-    }
-  }
-
-  .offset-header-d {
-    margin-left: 15%;
-    @include media("<=tablet") {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-
-  .green {
-    background-color: $green;
-  }
-
-  .dark-grey {
-    background-color: $dark-grey;
-  }
 }
