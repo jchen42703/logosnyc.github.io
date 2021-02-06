@@ -5,7 +5,7 @@
 .contact-container {
   background-color: $dark-grey;
   color: $white;
-  padding: 5% 15%;
+  padding: 5% 15% 8%;
   text-align: center;
   @include media("<=tablet") {
     padding: 5vh 15vw 10vh 15vw;
@@ -17,7 +17,6 @@
     align-items: center;
     grid-template-rows: repeat(5, 1fr);
     row-gap: 10%;
-    margin-top: 1%;
     @include media("<=tablet") {
       row-gap: 1%;
     }
