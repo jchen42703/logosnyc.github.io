@@ -122,6 +122,17 @@
   }
 }
 
+.transparent-dark {
+  background-color: transparent;
+  .nav-item a,
+  span {
+    @include media("<=tablet") {
+      color: $white;
+    }
+    color: $dark-grey;
+  }
+}
+
 .vanilla {
   background-color: $white;
 
