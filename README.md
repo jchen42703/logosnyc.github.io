@@ -1,5 +1,12 @@
 # Static Website
 
+## Update Schedule
+
+Every Sunday, update:
+
+- Latest Message in `index.html`
+- Upcoming Events with Slides
+
 ## Contributor Guide
 
 - Uses SCSS and `include-media` for styling.
