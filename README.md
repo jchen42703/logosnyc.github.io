@@ -4,7 +4,7 @@
 
 Every Sunday, update:
 
-- Latest Message in `index.html`
+- Latest Message in `index.html` and `events.html`
 - Upcoming Events with Slides
 
 ## Contributor Guide
